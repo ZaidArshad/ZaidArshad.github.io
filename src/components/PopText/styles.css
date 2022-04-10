@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import "../../App.css";
 
-.PopTextFront {
+.poptext-front {
   position: absolute;
   top: -3px;
   left: -3px;
@@ -11,17 +12,10 @@
   -webkit-text-stroke-width: 1px;
 }
 
-.PopTextBack {
+.poptext-back {
   position: relative;
   font-family: 'Poppins';
   font-style: normal;
   text-align: center;
   -webkit-text-stroke-width: 1px;
-}
-  
-.TitleSub {
-  color: #600C88;
-  font-size: 35px;
-  margin-top: -30px;
-  font-family:'Poppins';
 }

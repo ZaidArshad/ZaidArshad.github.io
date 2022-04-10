@@ -1,0 +1,16 @@
+.z-logo {
+    display: block;
+    margin-top: 46px;
+    margin-bottom: 105px;
+}
+
+.home-title {
+    margin-top: 75px;
+}
+
+.home-title-sub {
+    color: var(--secondayHome);
+    font-size: 35px;
+    margin-top: -30px;
+    font-family:'Poppins';
+  }

@@ -1,7 +1,7 @@
 :root {
-  --background:'#FFFFFF';
-  --primaryPurple:'#7C349E';
-  --secondayPurple:'#600C88';
+  --background:#FFFFFF;
+  --primaryHome:#7C349E;
+  --secondayHome:#600C88;
 }
 
 header {
@@ -13,20 +13,16 @@ header {
 
 .center {
   text-align: center;
+  align-items: center;
 }
 
-.PopText {
-  color: rgb(#7C349E);
-  font-size: 80px;
-}
-
-.Background {
+.background {
   justify-content: center;
   display: flex;
   flex-direction: column;
 }
 
-.Widget {
+.widget {
   display: block;
   margin-left: auto;
   margin-right: auto;
