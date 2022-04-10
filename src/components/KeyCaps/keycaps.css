@@ -1,0 +1,14 @@
+.diamond-hitbox {
+  position: absolute;
+  top: 312px;
+  left: 97px;
+  height: 305px;
+  width: 305px;
+  color: 'orange';
+  transform: rotate(45deg);
+}
+
+.middle {
+  text-align: center;
+  align-items: center;
+}

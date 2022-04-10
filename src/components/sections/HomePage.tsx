@@ -2,6 +2,7 @@ import '../../App.css';
 import './homepage.css'
 import PopText from '../PopText/PopText';
 import { ReactComponent as ZLogo } from '../assets/z-logo.svg'
+import { ReactComponent as ZDLogo } from '../assets/z-logo-pressed.svg'
 import KeyCap from '../KeyCaps/KeyCap';
 
 const HomePage = () => {
@@ -21,7 +22,7 @@ const HomePage = () => {
         <div className='home-title-sub'>Software Developer</div>
       </div>
 
-      <div className='z-logo'><KeyCap Logo={ZLogo}/></div>
+      <div className='z-logo'><KeyCap Logo={ZLogo} DLogo={ZDLogo}/></div>
       <PopText
         text='Projects'
         priColour={secColour}

@@ -1,4 +1,4 @@
-import './styles.css';
+import './poptext.css';
 import '../../App.css';
 import CSS from 'csstype';
 
