@@ -1,13 +1,14 @@
 import '../../App.css';
 import './homepage.css'
 import PopText from '../PopText/PopText';
-import { ReactComponent as ZLogo } from '../assets/z-logo.svg'
-import { ReactComponent as ZDLogo } from '../assets/z-logo-pressed.svg'
-import KeyCap from '../KeyCaps/KeyCap';
+import { CSSTransition } from 'react-transition-group';
+import ZCap from '../KeyCaps/ZCap';
+import { useState } from 'react';
 
 const HomePage = () => {
     const priColour = getComputedStyle(document.documentElement).getPropertyValue("--primaryHome");
     const secColour = getComputedStyle(document.documentElement).getPropertyValue("--secondayHome");
+    const [isHovered, setIsHovered] = useState<boolean>(false)
 
   return (
     <div>
@@ -22,13 +23,18 @@ const HomePage = () => {
         <div className='home-title-sub'>Software Developer</div>
       </div>
 
-      <div className='z-logo'><KeyCap Logo={ZLogo} DLogo={ZDLogo}/></div>
+      <div className='z-logo'><ZCap/></div>
       <PopText
         text='Projects'
         priColour={secColour}
         secColour={priColour}
         fSize='60px'
       />
+
+      <CSSTransition addEndListener={() => {}} in={isHovered} classNames='example' >
+          <h1 onMouseEnter={() => {setIsHovered(true)}} onMouseLeave={() => {setIsHovered(false)}}>Hello</h1>
+      </CSSTransition>
+
     </div>
   )
 }
