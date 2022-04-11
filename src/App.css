@@ -32,26 +32,3 @@ header {
   margin: 0;
   color: orange;
 }
-
-.example-enter {
-  opacity: 1;
-  color: red;
-}
-
-.example-enter.example-enter-active {
-  opacity: 0.0;
-  transition: opacity 1000ms ease-out;
-  color: orange;
-}
-
-.example-leave {
-  opacity: 0.1;
-  transition: opacity 1000ms ease-in;
-  color: blue;
-}
-
-.example-leave.example-leave-active {
-  opacity: 0.1;
-  transition: opacity 300ms ease-in;
-  color: blue;
-}

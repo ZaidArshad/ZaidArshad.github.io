@@ -9,6 +9,7 @@ const HomePage = () => {
     const priColour = getComputedStyle(document.documentElement).getPropertyValue("--primaryHome");
     const secColour = getComputedStyle(document.documentElement).getPropertyValue("--secondayHome");
     const [isHovered, setIsHovered] = useState<boolean>(false)
+    const [visible, setVisible] = useState<boolean>(true)
 
   return (
     <div>
@@ -30,11 +31,6 @@ const HomePage = () => {
         secColour={priColour}
         fSize='60px'
       />
-
-      <CSSTransition addEndListener={() => {}} in={isHovered} classNames='example' >
-          <h1 onMouseEnter={() => {setIsHovered(true)}} onMouseLeave={() => {setIsHovered(false)}}>Hello</h1>
-      </CSSTransition>
-
     </div>
   )
 }
