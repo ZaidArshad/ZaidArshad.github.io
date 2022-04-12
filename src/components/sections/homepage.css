@@ -1,16 +1,36 @@
+
 .z-logo {
     display: block;
-    margin-top: 46px;
-    margin-bottom: 105px;
+    margin-top: 2.396vw;
+    margin-bottom: 5.469vw;
 }
 
 .home-title {
-    margin-top: 75px;
+    margin-top: 3.906vw;
 }
 
 .home-title-sub {
-    color: var(--secondayHome);
-    font-size: 35px;
-    margin-top: -30px;
+    color: var(--secondaryHome);
+    font-size: 1.823vw;
+    margin-top: -1.563vw;
     font-family:'Poppins';
-  }
+}
+
+@media (max-width: 700px) {
+    .z-logo {
+        display: block;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+    
+    .home-title {
+        margin-top: 6vw;
+    }
+    
+    .home-title-sub {
+        color: var(--secondaryHome);
+        font-size: 5vw;
+        margin-top: -4vw;
+        font-family:'Poppins';
+    }
+}

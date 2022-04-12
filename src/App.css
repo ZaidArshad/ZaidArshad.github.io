@@ -1,7 +1,7 @@
 :root {
   --background:#FFFFFF;
   --primaryHome:#7C349E;
-  --secondayHome:#600C88;
+  --secondaryHome:#600C88;
 }
 
 header {
@@ -31,4 +31,9 @@ header {
   background-color: coral;
   margin: 0;
   color: orange;
+}
+
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
 }

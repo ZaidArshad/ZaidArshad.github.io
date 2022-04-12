@@ -1,10 +1,15 @@
+@import "../../App.css";
 
+.logo {
+    width: 22.552vw;
+    height: 26.042vw;
+}
 
 .keycap-hover {
     opacity: 0;
     transform: translate(0, 26.42px);
     transition: opacity 500ms, transform 300ms;
-  }
+}
   
 .keycap {
     opacity: 1;
@@ -12,5 +17,16 @@
 }
 
 .hitbox {
-    fill: #ffffff00;
-  }
+    fill: #00000000;
+}
+
+.animation-blocker {
+  fill: var(--background);
+}
+
+@media (max-width: 700px) {
+    .logo {
+        width: 60vw;
+        height: 69.28520vw;
+    }
+}

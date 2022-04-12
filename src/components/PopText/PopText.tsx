@@ -3,29 +3,16 @@ import '../../App.css';
 import CSS from 'csstype';
 
 interface Props {
-    text: string;
-    priColour: string;
-    secColour: string;
-    fSize: string;
+    className: string
+    text: string
 }
 
-const PopText: React.FC<Props> = ({text, priColour, secColour, fSize}) => {
-    const backStyle: CSS.Properties = {
-        color: getComputedStyle(document.documentElement).getPropertyValue("--background"),
-        fontSize: fSize,
-        WebkitTextStrokeColor: secColour
-    }
-    const frontStyle: CSS.Properties = {
-        color: priColour,
-        fontSize: fSize,
-        WebkitTextStrokeColor: secColour
-    }
-
+const PopText: React.FC<Props> = ({className, text}) => {
   return (
       <div>
-          <div style={backStyle} className={'poptext-back'}>
+          <div className={className + '-back poptext-back'}>
               {text}
-              <div style={frontStyle} className={'poptext-front'}>
+              <div className={className + '-front poptext-front'}>
                   {text}
               </div>
           </div>

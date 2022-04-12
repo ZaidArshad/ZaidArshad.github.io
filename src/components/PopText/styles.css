@@ -1,6 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 @import "../../App.css";
 
+.title-front {
+  font-size: 3.646vw;
+  color: var(--secondaryHome);
+  -webkit-text-stroke-color: var(--primaryHome);
+}
+
+.title-back {
+  font-size: 3.646vw;
+  color: var(--background);
+  -webkit-text-stroke-color: var(--primaryHome);
+}
+
 .poptext-front {
   position: absolute;
   top: -3px;
@@ -18,4 +30,18 @@
   font-style: normal;
   text-align: center;
   -webkit-text-stroke-width: 1px;
+}
+
+@media (max-width: 700px) {
+  .title-front {
+    font-size: 10vw;
+    color: var(--secondaryHome);
+    -webkit-text-stroke-color: var(--primaryHome);
+  }
+  
+  .title-back {
+    font-size: 10vw;
+    color: var(--background);
+    -webkit-text-stroke-color: var(--primaryHome);
+  }
 }
