@@ -1,9 +1,14 @@
-.keycap:hover{
+.keycap-hover{
     opacity: 0;
-    transition: opacity .55s ease-out;
+    transform: translate(0, 26.42px);
+    transition: opacity 300ms, transform 300ms;
   }
   
   .keycap {
     opacity: 1;
-    transition: opacity 1s ease-out;
+    transition: opacity 300ms, transform 300ms ease-out;
+  }
+
+  .hitbox {
+    fill: #ffffff00;
   }
