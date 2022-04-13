@@ -27,8 +27,7 @@ const KeyCap:React.FC = () => {
                 <path d="M347.051 234.717C362.333 234.717 374.722 222.328 374.722 207.046C374.722 191.764 362.333 179.376 347.051 179.376C331.769 179.376 319.381 191.764 319.381 207.046C319.381 222.328 331.769 234.717 347.051 234.717Z" stroke="#7C349E" strokeWidth="21"/>
               </g>
             </g>
-            
-            <path className='hitbox' d="M1 216.292V242.708L216.292 458L431.584 242.708V216.292M1 216.292L216.292 431.584L431.584 216.292M1 216.292L216.292 1L431.584 216.292" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}/>
+            <path onClick={() => {window.open("https://github.com/ZaidArshad", "_blank")}} className='hitbox' d="M1 216.292V242.708L216.292 458L431.584 242.708V216.292M1 216.292L216.292 431.584L431.584 216.292M1 216.292L216.292 1L431.584 216.292" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}/>
             <path  className='animation-blocker' d="M216.5 498.706C300.576 414.629 432.889 283.414 432.889 283.414L432.5 242.5L216.5 457.5L0 242.206L0 283.403C84.0767 367.48 132.423 414.629 216.5 498.706Z"/>
 
           </svg>

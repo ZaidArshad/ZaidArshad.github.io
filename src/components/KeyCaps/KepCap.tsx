@@ -10,7 +10,6 @@ interface Props {
 const KepCap:React.FC<Props> = ({front, back}) => {
     const bgColor = getComputedStyle(document.documentElement).getPropertyValue("--background");
     const [isHovered, setIsHovered] = useState<boolean>(false);
-
   return (
     <svg className='keycap-svg' viewBox="0 0 545 368" fill="none" xmlns="http://www.w3.org/2000/svg" >
       {back}

@@ -15,9 +15,9 @@
 
 .poptext-front {
   position: absolute;
-  top: -3px;
-  left: -3px;
-  right: 3px;
+  top: -0.156vw;
+  left: -0.156vw;
+  right: 0.156vw;
   font-family: 'Poppins';
   font-style: normal;
   text-align: center;
@@ -44,4 +44,16 @@
     color: var(--background);
     -webkit-text-stroke-color: var(--primaryHome);
   }
+
+  .poptext-front {
+    position: absolute;
+    top: -0.456vw;
+    left: -0.456vw;
+    right: 0.456vw;
+    font-family: 'Poppins';
+    font-style: normal;
+    text-align: center;
+    -webkit-text-stroke-width: 1px;
+  }
+  
 }
