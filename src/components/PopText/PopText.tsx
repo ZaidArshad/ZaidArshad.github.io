@@ -3,8 +3,8 @@ import '../../App.css';
 import CSS from 'csstype';
 
 interface Props {
-    className: string
-    text: string
+    className: string;
+    text: string;
 }
 
 const PopText: React.FC<Props> = ({className, text}) => {
