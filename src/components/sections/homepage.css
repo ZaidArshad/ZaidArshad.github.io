@@ -1,4 +1,3 @@
-
 .z-logo {
     display: block;
     margin-top: 2.396vw;
@@ -7,6 +6,10 @@
 
 .home-title {
     margin-top: 3.906vw;
+}
+
+.project-tab {
+    margin-top: 2vw;
 }
 
 .home-title-sub {

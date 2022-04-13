@@ -5,12 +5,29 @@
     height: 26.042vw;
 }
 
-.keycap-hover {
+.keycap-svg {
+    width: 28.385vw;
+    height: 19.167vw;
+    margin: 3vw;
+}
+
+.keycap-z-hover {
     opacity: 0;
     transform: translate(0, 26.42px);
     transition: opacity 500ms, transform 300ms;
 }
   
+.keycap-z {
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms ease-out;
+}
+
+.keycap-hover {
+    opacity: 0;
+    transform: translate(16.44px, 16.44px);
+    transition: opacity 500ms, transform 300ms;
+}
+
 .keycap {
     opacity: 1;
     transition: opacity 300ms, transform 300ms ease-out;
@@ -29,4 +46,11 @@
         width: 60vw;
         height: 69.28520vw;
     }
+
+    .keycap-svg {
+        width: 85.155vw;
+        height: 57.501vw;
+        margin: 3vw;
+    }
+
 }
