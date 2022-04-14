@@ -1,6 +1,5 @@
 import './styles.css';
 import '../../App.css';
-import CSS from 'csstype';
 
 interface Props {
     className: string;

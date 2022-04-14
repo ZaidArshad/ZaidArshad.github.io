@@ -2,7 +2,7 @@ import { useState} from 'react';
 import './styles.css';
 import "../../App.css";
 
-interface Props {
+export interface KeyCapProps {
   Front: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   Back: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
   link: string;
@@ -12,16 +12,15 @@ const onClick:Function = (link:string) => {
   window.open(link, "_blank");
 }
 
-const KepCap:React.FC<Props> = ({Front, Back, link}) => {
-    const bgColor = getComputedStyle(document.documentElement).getPropertyValue("--background");
+const KepCap:React.FC<KeyCapProps> = ({Front, Back, link}) => {
     const [isHovered, setIsHovered] = useState<boolean>(false);
   return (
     <svg className='keycap-svg' viewBox="0 0 545 368" fill="none" xmlns="http://www.w3.org/2000/svg" >
       <Back/>
-      <g className={isHovered ? 'keycap-hover' : 'keycap'}> <Front/> </g>
-
+      <g className={isHovered ? 'keycap-hover' : 'keycap'}>
+        <Front/>
+      </g>
       <path className='animation-blocker' d="M0 368V345H521.426V0H544.5V368H0Z"/>
-      
       <path 
         onMouseDown={() => {onClick(link)}}
         className='hitbox'

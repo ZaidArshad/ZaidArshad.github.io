@@ -12,8 +12,9 @@ const KeyCap:React.FC = () => {
     <div className='center'>        
       <svg className='logo' viewBox="0 0 433 459" fill="white" xmlns="http://www.w3.org/2000/svg">
         <ZLogoBack/>
-        <g className={isHovered ? 'keycap-z-hover' : 'keycap-z'}> <ZLogoFront/> </g>
-
+        <g className={isHovered ? 'keycap-z-hover' : 'keycap-z'}>
+          <ZLogoFront/>
+        </g>
         <path
           className='hitbox'
           onClick={() => {window.open("https://github.com/ZaidArshad", "_blank")}}
