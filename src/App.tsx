@@ -1,7 +1,7 @@
 import './App.css';
 import HomePage from './components/sections/HomePage';
-import ZLogo from './components/KeyCaps/ZCap';
 import { BrowserRouter, Route, Routes} from 'react-router-dom';
+import projects from './components/sections/projects';
 
 function App() {
 
@@ -10,7 +10,11 @@ function App() {
       <div className='center'>
         <Routes>
           <Route path='' element={<HomePage/>}/>
-          <Route path='test' element={<ZLogo/>}/>
+          {
+            projects.map((project) => 
+            <Route path={project.link} element={project.Page !== undefined ? <project.Page/> : project.link + ' does not exist'}/>
+            )
+          }
         </Routes>
       </div>
     </BrowserRouter>

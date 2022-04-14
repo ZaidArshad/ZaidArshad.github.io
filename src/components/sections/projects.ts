@@ -1,51 +1,59 @@
 import * as projectSvgs from '../assets/projects';
-import { KeyCapProps } from '../KeyCaps/KepCap'
+import WatRe from '../assets/projects/WatRe/WatRe';
 
-export const projects: KeyCapProps[] = [
+export interface Projects {
+    Front: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+    Back: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
+    Page?: React.FC | undefined;
+    link: string;
+  }
+
+export const projects: Projects[] = [
     {
         Front: projectSvgs.BoatxzFront,
         Back: projectSvgs.BoatxzBack,
-        link: 'https://github.com/ZaidArshad/Boatxz',
+        link: '/boatxz',
     },
     {
         Front: projectSvgs.WatReFront,
         Back: projectSvgs.WatReBack,
-        link: 'https://github.com/ZaidArshad/WatRe',
+        Page: WatRe,
+        link: '/watre',
     },
     {
         Front: projectSvgs.LevelToolFront,
         Back: projectSvgs.LevelToolBack,
-        link: 'https://github.com/ZaidArshad/Decay-Level-Tool',
+        link: '/level-tool',
     },
     {
         Front: projectSvgs.DecayFront,
         Back: projectSvgs.DecayBack,
-        link: 'https://github.com/ZaidArshad/Decay',
+        link: '/decay',
     },
     {
         Front: projectSvgs.DuckHuntFront,
         Back: projectSvgs.DuckHuntBack,
-        link: 'https://github.com/ZaidArshad/SOSY-Hacks-Duck-Hunt',
+        link: '/duck-hunt',
     },
     {
         Front: projectSvgs.LapsFront,
         Back: projectSvgs.LapsBack,
-        link: 'https://github.com/ZaidArshad/Laps',
+        link: '/laps',
     },
     {
         Front: projectSvgs.SupplyTrackerFront,
         Back: projectSvgs.SupplyTrackerBack,
-        link: 'https://github.com/ZaidArshad/Web-Consumable-Tracker',
+        link: '/supply-tracker',
     },
     {
         Front: projectSvgs.GobblersFront,
         Back: projectSvgs.GobblersBack,
-        link: 'https://github.com/ZaidArshad/SFU-CS-Fall-Hacks-2021',
+        link: '/gobblers',
     },
     {
         Front: projectSvgs.BounceFront,
         Back: projectSvgs.BounceBack,
-        link: 'https://github.com/ZaidArshad/Bounce',
+        link: '/bounce',
     },
 ];
 
