@@ -31,28 +31,23 @@ const HomePage = () => {
     <div>
 
       <div className='home-title'>
-        <PopText
-          text='Zaid Arshad'
-          className='title'
-        />
+        <PopText text='Zaid Arshad' className='title'/>
         <div className='home-title-sub'>Software Developer</div>
       </div>
+
       <div className='z-logo'><ZCap/></div>
-      <PopText
-        text='Projects'
-        className='title'
-      />
+      <PopText text='Projects' className='title'/>
 
       <div className='project-tab'>
-        <KeyCap front={<g><BoatxzFront/></g>} back={<g><BoatxzBack/></g>}/>
-        <KeyCap front={<g><WatReFront/></g>} back={<g><WatReBack/></g>}/>
-        <KeyCap front={<g><LevelToolFront/></g>} back={<g><LevelToolBack/></g>}/>
-        <KeyCap front={<g><DecayFront/></g>} back={<g><DecayBack/></g>}/>
-        <KeyCap front={<g><DuckHuntFront/></g>} back={<g><DuckHuntBack/></g>}/>
-        <KeyCap front={<g><LapsFront/></g>} back={<g><LapsBack/></g>}/>
-        <KeyCap front={<g><SupplyTrackerFront/></g>} back={<g><SupplyTrackerBack/></g>}/>
-        <KeyCap front={<g><GobblersFront/></g>} back={<g><GobblersBack/></g>}/>
-        <KeyCap front={<g><BounceFront/></g>} back={<g><BounceBack/></g>}/>
+        <KeyCap Front={BoatxzFront} Back={BoatxzBack} link='https://github.com/ZaidArshad/Boatxz'/>
+        <KeyCap Front={WatReFront} Back={WatReBack} link='https://github.com/ZaidArshad/WatRe'/>
+        <KeyCap Front={LevelToolFront} Back={LevelToolBack} link='https://github.com/ZaidArshad/Decay-Level-Tool'/>
+        <KeyCap Front={DecayFront} Back={DecayBack} link='https://github.com/ZaidArshad/Decay'/>
+        <KeyCap Front={DuckHuntFront} Back={DuckHuntBack} link='https://github.com/ZaidArshad/SOSY-Hacks-Duck-Hunt'/>
+        <KeyCap Front={LapsFront} Back={LapsBack} link='https://github.com/ZaidArshad/Laps'/>
+        <KeyCap Front={SupplyTrackerFront} Back={SupplyTrackerBack} link='https://github.com/ZaidArshad/Web-Consumable-Tracker'/>
+        <KeyCap Front={GobblersFront} Back={GobblersBack} link='https://github.com/ZaidArshad/SFU-CS-Fall-Hacks-2021'/>
+        <KeyCap Front={BounceFront} Back={BounceBack} link='https://github.com/ZaidArshad/Bounce'/>
       </div>
     </div>
   )
