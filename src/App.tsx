@@ -1,14 +1,19 @@
 import './App.css';
 import HomePage from './components/sections/HomePage';
+import ZLogo from './components/KeyCaps/ZCap';
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 
 function App() {
 
   return (
-    <div>
+    <BrowserRouter>
       <div className='center'>
-        <HomePage/>
+        <Routes>
+          <Route path='' element={<HomePage/>}/>
+          <Route path='test' element={<ZLogo/>}/>
+        </Routes>
       </div>
-    </div>
+    </BrowserRouter>
   );
 }
 
