@@ -13,6 +13,7 @@ function App() {
           {
             projects.map((project) => 
             <Route
+              key={project.key}
               path={project.link}
               element={project.Page !== undefined ? <project.Page primaryColor={project.primaryColor} secondaryColor={project.secondayColor}/> : project.link + ' does not exist'}/>
             )
