@@ -1,0 +1,39 @@
+.sticky {
+    position: sticky;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.836);
+    padding: 10px;
+}
+
+.webpage > * {
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family:'Poppins';
+}
+
+.text-area > * {
+    padding: 10px;
+    text-align: left;
+}
+
+.img {
+    width: 28.125vw;
+    padding: 20px;
+    margin: auto;
+}
+
+.text-img {
+    display: flex;
+    flex-direction: row;
+}
+
+@media (max-width: 700px) {
+    .img {
+        width: 80%;
+    }
+
+    .text-img {
+        display: flex;
+        flex-direction: column;
+    }
+}

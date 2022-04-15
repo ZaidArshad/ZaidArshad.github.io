@@ -9,7 +9,9 @@ const HomePage = () => {
   return (
     <div>
       <div className='home-title'>
-        <PopText text='Zaid Arshad' className='title'/>
+        <PopText>
+          Zaid Arshad
+        </PopText>
         <div className='home-title-sub'>
           Software Developer
         </div>
@@ -19,7 +21,9 @@ const HomePage = () => {
         <ZCap/>
       </div>
 
-      <PopText text='Projects' className='title'/>
+      <PopText>
+        Projects
+      </PopText>
       <div className='project-tab'>
         {
           projects.map((project) => 

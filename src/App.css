@@ -4,13 +4,6 @@
   --secondaryHome:#600C88;
 }
 
-header {
-  margin: auto;
-  font-size: 100px;
-  width: 50%;
-  color: rgb(0, 0, 0);
-}
-
 .center {
   text-align: center;
   align-items: center;
@@ -22,18 +15,6 @@ header {
   flex-direction: column;
 }
 
-.widget {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 40%;
-  border: 5px solid gray;
-  background-color: coral;
-  margin: 0;
-  color: orange;
-}
-
 html, body {
   max-width: 100%;
-  overflow-x: hidden;
 }

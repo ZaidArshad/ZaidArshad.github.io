@@ -4,8 +4,10 @@ import WatRe from '../assets/projects/WatRe/WatRe';
 export interface Projects {
     Front: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
     Back: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-    Page?: React.FC | undefined;
+    Page?: React.FC<any> | undefined;
     link: string;
+    primaryColor?: string;
+    secondayColor?: string;
   }
 
 export const projects: Projects[] = [
@@ -19,6 +21,8 @@ export const projects: Projects[] = [
         Back: projectSvgs.WatReBack,
         Page: WatRe,
         link: '/watre',
+        primaryColor: '#3E68FF',
+        secondayColor: '#183AB2'
     },
     {
         Front: projectSvgs.LevelToolFront,
