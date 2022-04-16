@@ -2,6 +2,7 @@ import React from 'react'
 import ProjectPage from '../../../ProjectPage/ProjectPage'
 import TextDescription from '../../../TextDescription/TextDescription'
 import TextImg from '../../../TextImg/TextImg'
+import './style.css'
 
 interface Props {
   primaryColor: string,
@@ -9,7 +10,6 @@ interface Props {
 }
 
 const WatRe:React.FC<Props> = ({primaryColor, secondaryColor}) => {
-  // window.scrollTo(0, 0);
   return (
     <ProjectPage projectName='WatRe' primaryColor={primaryColor} secondaryColor={secondaryColor}>
       <h2> Project by Zaid Arshad. Developed from June to August 2020 </h2>
@@ -52,6 +52,37 @@ const WatRe:React.FC<Props> = ({primaryColor, secondaryColor}) => {
             remind you to drink water again in the next 1.5 hours. Once it is
             clicked it will turn grey showing that it is unclickable.
             It will also fill the bar representing how much water you have drank.
+      </TextImg>
+
+      <div className='section' style={{textAlign:'center'}}>
+        <div>
+            <h1>
+                Button Phases
+            </h1>
+            <p>
+                The button has 3 phases.
+            </p>
+        </div>
+        <img className='img' alt='' src='https://user-images.githubusercontent.com/52565263/144064606-92c6d0c1-5ecc-40b5-aec7-06ace5b39fdb.png'/>
+      </div>
+
+      <TextImg
+        title='Hourly Reminder'
+        className='text-img'
+        imgClass='img'
+        imgSrc='https://user-images.githubusercontent.com/52565263/144075336-62d3d172-9e98-490d-a77f-c8cf4ef3b36e.png'>
+            Every 1 hour and 30 minutes after the button is pressed
+            there is a reminder to drink water again.
+            This will happen up to 7 times a day signifying the
+            recommended 8 glasses of water that a human should drink.
+      </TextImg>
+
+      <TextImg
+        title='Animated Background'
+        className='img-text'
+        imgClass='img-phone'
+        imgSrc='https://user-images.githubusercontent.com/52565263/144073778-dd2c2d17-d974-41b8-8a3e-df70fda41811.gif'>
+            The animated background is a pleasant feature to look at every time you open the app.
       </TextImg>
     </ProjectPage>
   )

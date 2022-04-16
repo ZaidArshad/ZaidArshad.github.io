@@ -17,6 +17,10 @@
     border-radius: 0.781vw;
 }
 
+.center {
+    text-align: center;
+}
+
 .text-img {
     display: flex;
     justify-content: center;
@@ -29,7 +33,7 @@
 }
 
 .text-img div {
-    width: 40%;
+    width: 60%;
     justify-content: center;
     align-content: center;
     display: flex;

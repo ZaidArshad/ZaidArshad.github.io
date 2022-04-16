@@ -10,6 +10,13 @@
     background-color: white;
 }
 
+.back-button {
+    position: absolute;
+    height: 70%;
+    top: 1.1vw;
+    left: -20.833vw;
+}
+
 .text-area > * {
     text-align: left;
     font-family:'Poppins';
@@ -32,8 +39,8 @@
 }
 
 .text-area .section:nth-child(2n-1) {
-    background-color: var(--secondaryColor);
     color: white;
+    background-color: var(--secondaryColor);
 }
 
 .text-area div {
@@ -42,6 +49,12 @@
 }
 
 @media (max-width: 700px) {
+    .back-button {
+        position: absolute;
+        height: 70%;
+        top: 2.9vw;
+        left: -15vw;
+    }
 
     .text-area h2 {
         text-align: center;

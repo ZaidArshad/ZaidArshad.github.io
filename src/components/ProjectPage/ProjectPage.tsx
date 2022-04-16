@@ -1,3 +1,4 @@
+import BackButton from "../KeyCaps/BackButton";
 import PopText from "../PopText/PopText"
 import './styles.css'
 
@@ -8,20 +9,22 @@ interface Props {
 }
 
 const ProjectPage:React.FC<Props> = (props) => {
+  window.scroll(0,0);
     document.documentElement.style.setProperty("--primaryColor", props.primaryColor);
     document.documentElement.style.setProperty("--secondaryColor", props.secondaryColor);
 
   return (
     <div className='webpage'>
-        <div className='sticky'>
-          <PopText primaryColor={props.primaryColor} secondaryColor={props.secondaryColor} >
-            {props.projectName}
-          </PopText>
-        </div>
+      <div className='sticky'>
+        <PopText primaryColor={props.primaryColor} secondaryColor={props.secondaryColor} >
+          {props.projectName}
+        </PopText>
+        <BackButton primaryColor={props.primaryColor} secondaryColor={props.secondaryColor}/>
+      </div>
 
-        <div className='text-area'>
-            {props.children}
-        </div>
+      <div className='text-area'>
+          {props.children}
+      </div>
     </div>
   )
 }
