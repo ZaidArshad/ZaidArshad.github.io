@@ -5,9 +5,7 @@ import ZCap from '../KeyCaps/ZCap';
 import KeyCap from '../KeyCaps/KepCap';
 import projects from './projects';
 import TextDescription from '../TextDescription/TextDescription';
-
-import { ReactComponent as Front} from '../assets/backbutton/back-button-cap.svg';
-import { ReactComponent as Back} from '../assets/backbutton/back-button-cap-pressed.svg';
+import * as iconSVGs from '../assets/icons/index';
 import DiamondCaps from '../DiamondCaps/DiamondCaps';
 
 const HomePage = () => {
@@ -46,9 +44,10 @@ const HomePage = () => {
         </TextDescription>
 
         <div className='external-links'>
-          <DiamondCaps Front={Front} Back={Back} link={''}/>
-          <DiamondCaps Front={Front} Back={Back} link={''}/>
-          <DiamondCaps Front={Front} Back={Back} link={''}/>
+          <DiamondCaps Front={iconSVGs.LinkedinFront} Back={iconSVGs.LinkedinBack} link={'https://www.linkedin.com/in/zaid-arshad-882b12227/'}/>
+          <DiamondCaps Front={iconSVGs.GithubFront} Back={iconSVGs.GithubBack} link={'https://github.com/ZaidArshad'}/>
+          <DiamondCaps Front={iconSVGs.EmailFront} Back={iconSVGs.EmailBack} link={'mailto:zaidy.arshad@gmail.com'}/>
+          <DiamondCaps Front={iconSVGs.CVFront} Back={iconSVGs.CVBack} link='resumes/dev-resume.pdf'/>
         </div>
       </div>
     </div>

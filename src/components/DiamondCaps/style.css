@@ -6,7 +6,7 @@
 
 .diamondcap-hover {
     opacity: 0;
-    transform: translate(16.44px, 16.44px);
+    transform: translate(0, 8.44px);
     transition: opacity 500ms, transform 300ms;
 }
 

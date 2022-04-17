@@ -1,5 +1,4 @@
 import React, { useState } from 'react'
-import { useNavigate } from 'react-router';
 import './style.css'
 
 export interface Props {
@@ -10,7 +9,6 @@ export interface Props {
 
 const DiamondCaps:React.FC<Props> = ({Front, Back, link}) => {
     const [isHovered, setIsHovered] = useState<boolean>(false)
-    const bgColor = document.documentElement.style.getPropertyValue("--backgroundColor");
 
     return (
   
@@ -18,13 +16,13 @@ const DiamondCaps:React.FC<Props> = ({Front, Back, link}) => {
         <svg className='diamondcap-svg' viewBox="0 0 117 127" fill="none" xmlns="http://www.w3.org/2000/svg">
             <Back/>
           
-          <g className={isHovered ? 'diamondcap-back-hover' : 'diamondcap-back'}>
+          <g className={isHovered ? 'diamondcap-hover' : 'diamondcap'}>
               <Front/>
           </g>
-  
+          
           <path
             className='hitbox'
-            onClick={() => {window.open(link)}}
+            onMouseDown={() => {window.open(link)}}
             d="M1 61.0644L54.5 114.564L108 61.0644V54.5L54.5 1L1 54.5V61.0644Z"
             onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}/>
           <path

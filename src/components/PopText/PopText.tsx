@@ -1,13 +1,11 @@
 import './styles.css';
 import '../../App.css';
-import { colorToRgba } from 'react-spring/node_modules/@react-spring/shared';
 
 interface Props {
     fontSize?: string;
     primaryColor?: string;
     secondaryColor?: string;
 }
-
 
 const PopText: React.FC<Props> = (props) => {
     const backStyle = {
