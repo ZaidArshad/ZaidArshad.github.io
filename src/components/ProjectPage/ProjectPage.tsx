@@ -16,9 +16,11 @@ const ProjectPage:React.FC<Props> = (props) => {
   return (
     <div className='webpage'>
       <div className='sticky'>
-        <PopText primaryColor={props.primaryColor} secondaryColor={props.secondaryColor} >
-          {props.projectName}
-        </PopText>
+        <div className="project-title">
+          <PopText primaryColor={props.primaryColor} secondaryColor={props.secondaryColor} >
+            {props.projectName}
+          </PopText>
+        </div>
         <BackButton/>
       </div>
 

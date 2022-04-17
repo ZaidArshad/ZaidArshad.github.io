@@ -54,17 +54,13 @@ const WatRe:React.FC<Props> = ({primaryColor, secondaryColor}) => {
             It will also fill the bar representing how much water you have drank.
       </TextImg>
 
-      <div className='section' style={{textAlign:'center'}}>
-        <div>
-            <h1>
-                Button Phases
-            </h1>
-            <p>
-                The button has 3 phases.
-            </p>
-        </div>
-        <img className='img' alt='' src='https://user-images.githubusercontent.com/52565263/144064606-92c6d0c1-5ecc-40b5-aec7-06ace5b39fdb.png'/>
-      </div>
+      <TextImg
+        title='Button Phases'
+        className='center'
+        imgClass='img'
+        imgSrc='https://user-images.githubusercontent.com/52565263/144064606-92c6d0c1-5ecc-40b5-aec7-06ace5b39fdb.png'>
+          The button has 3 phases.
+      </TextImg>
 
       <TextImg
         title='Hourly Reminder'

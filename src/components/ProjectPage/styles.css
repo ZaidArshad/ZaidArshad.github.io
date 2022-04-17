@@ -49,11 +49,16 @@
 }
 
 @media (max-width: 700px) {
+    .project-title {
+        padding-left: 22%;
+        padding-right: 22%;
+    }
+
     .back-button {
         position: absolute;
         height: 70%;
         top: 2.9vw;
-        left: -15vw;
+        left: -13vw;
     }
 
     .text-area h2 {

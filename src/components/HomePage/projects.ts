@@ -1,12 +1,13 @@
 import * as projectSvgs from '../assets/projects';
+import LevelTool from '../assets/projects/LevelTool/LevelTool';
 import WatRe from '../assets/projects/WatRe/WatRe';
 
 export interface Projects {
     key: number;
     Front: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
     Back: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-    Page?: React.FC<any> | undefined;
     link: string;
+    Page?: React.FC<any> | undefined;
     primaryColor?: string;
     secondayColor?: string;
   }
@@ -22,8 +23,8 @@ export const projects: Projects[] = [
         key: 1,
         Front: projectSvgs.WatReFront,
         Back: projectSvgs.WatReBack,
-        Page: WatRe,
         link: '/watre',
+        Page: WatRe,
         primaryColor: '#3E68FF',
         secondayColor: '#183AB2'
     },
@@ -32,6 +33,9 @@ export const projects: Projects[] = [
         Front: projectSvgs.LevelToolFront,
         Back: projectSvgs.LevelToolBack,
         link: '/level-tool',
+        Page: LevelTool,
+        primaryColor: '#FF419C',
+        secondayColor: '#E51B7C'
     },
     {
         key: 3,
