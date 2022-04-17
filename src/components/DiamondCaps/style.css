@@ -1,0 +1,32 @@
+@import "../../App.css";
+
+.diamondcap-svg {
+    width: 10vw;
+}
+
+.diamondcap-hover {
+    opacity: 0;
+    transform: translate(16.44px, 16.44px);
+    transition: opacity 500ms, transform 300ms;
+}
+
+.diamondcap {
+    opacity: 1;
+    transition: opacity 300ms, transform 300ms ease-out;
+}
+
+.hitbox {
+    fill: #00000000;
+}
+
+.diamondcap-animation-blocker {
+  fill: var(--secondaryHome);
+}
+
+@media (max-width: 700px) {
+
+    .diamondcap-svg {
+        width: 20vw;
+    }
+
+}

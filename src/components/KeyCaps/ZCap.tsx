@@ -1,8 +1,8 @@
 import { useState } from 'react';
 import './styles.css';
 import "../../App.css";
-import { ReactComponent as ZLogoFront} from '../assets/ZLogo/z-logo.svg'
-import { ReactComponent as ZLogoBack} from '../assets/ZLogo/z-logo-pressed.svg'
+import { ReactComponent as ZLogoFront} from '../assets/zlogo/z-logo.svg'
+import { ReactComponent as ZLogoBack} from '../assets/zlogo/z-logo-pressed.svg'
 
 const KeyCap:React.FC = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false)
@@ -17,7 +17,7 @@ const KeyCap:React.FC = () => {
         </g>
         <path
           className='hitbox'
-          onClick={() => {window.open("https://github.com/ZaidArshad", "_blank")}}
+          onClick={() => {window.scroll(0, 10000)}}
           d="M1 216.292V242.708L216.292 458L431.584 242.708V216.292M1 216.292L216.292 431.584L431.584 216.292M1 216.292L216.292 1L431.584 216.292"
           onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}/>
         <path

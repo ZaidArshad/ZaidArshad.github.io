@@ -19,6 +19,29 @@
     font-family:'Poppins';
 }
 
+.about {
+    font-family: 'Poppins';
+    color: var(--background);
+    background: var(--secondaryHome);
+    padding: 20px 20vw;
+    font-size: 1.563vw;
+}
+
+.about > * {
+    margin: 30px;
+}
+
+.external-links {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.external-links > div {
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
 @media (max-width: 700px) {
     .z-logo {
         display: block;
@@ -35,5 +58,18 @@
         font-size: 5vw;
         margin-top: -4vw;
         font-family:'Poppins';
+    }
+
+    .about {
+        font-family: 'Poppins';
+        color: var(--background);
+        background: var(--secondaryHome);
+        padding: 20px 0%;
+        font-size: 4.563vw;
+    }
+
+    .external-links > div {
+        margin-left: 6vw;
+        margin-right: 6vw;
     }
 }

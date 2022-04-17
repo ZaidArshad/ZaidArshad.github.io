@@ -1,17 +1,12 @@
 import { useState } from 'react';
 import './styles.css';
 import "../../App.css";
-import { ReactComponent as BackButtonFront} from '../assets/BackButton/back-button-cap.svg'
-import { ReactComponent as BackButtonBack} from '../assets/BackButton/back-button-cap-pressed.svg'
 import { useNavigate } from 'react-router-dom';
 
-interface Props {
-    primaryColor: string;
-    secondaryColor: string;
-}
-
-const KeyCap:React.FC<Props> = ({primaryColor, secondaryColor}) => {
+const KeyCap:React.FC = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false)
+  const secondaryColor = document.documentElement.style.getPropertyValue("--secondaryColor");
+  const primaryColor = document.documentElement.style.getPropertyValue("--primaryColor");
   const navigate = useNavigate();
 
   return (

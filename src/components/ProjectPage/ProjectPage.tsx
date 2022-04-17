@@ -19,7 +19,7 @@ const ProjectPage:React.FC<Props> = (props) => {
         <PopText primaryColor={props.primaryColor} secondaryColor={props.secondaryColor} >
           {props.projectName}
         </PopText>
-        <BackButton primaryColor={props.primaryColor} secondaryColor={props.secondaryColor}/>
+        <BackButton/>
       </div>
 
       <div className='text-area'>
