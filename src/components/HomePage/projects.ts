@@ -1,7 +1,8 @@
 import * as projectSvgs from '../assets/projects';
-import Decay from '../assets/projects/Decay/Decay';
-import LevelTool from '../assets/projects/LevelTool/LevelTool';
-import WatRe from '../assets/projects/WatRe/WatRe';
+import Decay from '../pages/Decay';
+import DuckHunt from '../pages/DuckHunt';
+import LevelTool from '../pages/LevelTool';
+import WatRe from '../pages/WatRe';
 
 export interface Projects {
     key: number;
@@ -36,7 +37,7 @@ export const projects: Projects[] = [
         link: '/level-tool',
         Page: LevelTool,
         primaryColor: '#FF419C',
-        secondayColor: '#E51B7C'
+        secondayColor: '#AF0054'
     },
     {
         key: 3,
@@ -52,6 +53,9 @@ export const projects: Projects[] = [
         Front: projectSvgs.DuckHuntFront,
         Back: projectSvgs.DuckHuntBack,
         link: '/duck-hunt',
+        Page: DuckHunt,
+        primaryColor: '#FFC700',
+        secondayColor: '#E19400'
     },
     {
         key: 5,

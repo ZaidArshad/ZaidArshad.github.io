@@ -2,13 +2,18 @@ import BackButton from "../KeyCaps/BackButton";
 import PopText from "../PopText/PopText"
 import './styles.css'
 
-interface Props {
+interface ProjectPageProps {
     primaryColor: string;
     secondaryColor: string;
     projectName: string;
 }
 
-const ProjectPage:React.FC<Props> = (props) => {
+export interface ProjectProps {
+  primaryColor: string,
+  secondaryColor: string,
+}
+
+const ProjectPage:React.FC<ProjectPageProps> = (props) => {
   window.scroll(0,0);
     document.documentElement.style.setProperty("--primaryColor", props.primaryColor);
     document.documentElement.style.setProperty("--secondaryColor", props.secondaryColor);

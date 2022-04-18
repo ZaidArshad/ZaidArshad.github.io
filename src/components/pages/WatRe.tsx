@@ -1,15 +1,10 @@
 import React from 'react'
-import ProjectPage from '../../../ProjectPage/ProjectPage'
-import TextDescription from '../../../TextDescription/TextDescription'
-import TextImg from '../../../TextImg/TextImg'
-import './style.css'
+import ProjectPage, { ProjectProps } from '../ProjectPage/ProjectPage'
+import TextDescription from '../TextDescription/TextDescription'
+import TextImg from '../TextImg/TextImg'
 
-interface Props {
-  primaryColor: string,
-  secondaryColor: string,
-}
 
-const WatRe:React.FC<Props> = ({primaryColor, secondaryColor}) => {
+const WatRe:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
   return (
     <ProjectPage projectName='WatRe' primaryColor={primaryColor} secondaryColor={secondaryColor}>
       <h2> Project by Zaid Arshad. Developed from June to August 2020 </h2>

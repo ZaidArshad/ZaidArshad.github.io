@@ -8,9 +8,10 @@ interface Props {
 }
 
 const TextImg:React.FC<Props> = (props) => {
+    const divClass:string = props.className === 'center' ?  'center' : 'text-img-text';
   return (
     <div className={props.className + ' section'}>
-        <div>
+        <div className={divClass}>
             <h1>
                 {props.title}
             </h1>
@@ -25,7 +26,7 @@ const TextImg:React.FC<Props> = (props) => {
 
 TextImg.defaultProps = {
     className: 'text-img',
-    imgClass: 'img'
+    imgClass: 'img',
 }
 
 export default TextImg

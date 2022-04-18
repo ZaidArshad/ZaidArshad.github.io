@@ -1,14 +1,10 @@
 import React from 'react'
-import ProjectPage from '../../../ProjectPage/ProjectPage'
-import TextDescription from '../../../TextDescription/TextDescription'
-import TextImg from '../../../TextImg/TextImg'
+import ProjectPage, { ProjectProps } from '../ProjectPage/ProjectPage'
+import TextDescription from '../TextDescription/TextDescription'
+import TextImg from '../TextImg/TextImg'
 
-interface Props {
-    primaryColor: string,
-    secondaryColor: string,
-  }
 
-const Decay:React.FC<Props> = ({primaryColor, secondaryColor}) => {
+const Decay:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
   return (
     <ProjectPage projectName='Decay' primaryColor={primaryColor} secondaryColor={secondaryColor}>
         <h2> Project by Zaid Arshad - Developed from August to December 2020. </h2>
@@ -76,7 +72,7 @@ const Decay:React.FC<Props> = ({primaryColor, secondaryColor}) => {
       </TextDescription>
 
       <div className={'text-img' + ' section'}>
-        <div>
+        <div className='text-img-text'>
             <h1>
                 Sound
             </h1>
@@ -86,7 +82,6 @@ const Decay:React.FC<Props> = ({primaryColor, secondaryColor}) => {
             </p>
         </div>
         <p className='img center'>
-            <div style={{margin:'-30px'}}></div>
             <div>
                 Death <br/>
                 <audio style={{width:'100%'}} controls src="sounds/slowdown.mp3"/>

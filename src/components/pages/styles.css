@@ -1,0 +1,14 @@
+.collage-phone {
+    text-align: center;
+}
+
+.collage-phone img {
+    width: 15.625vw;
+    margin: 10px;
+}
+
+@media (max-width: 700px) { 
+    .collage-phone img {
+        width: 23vw;
+    }
+}

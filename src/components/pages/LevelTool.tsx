@@ -1,7 +1,7 @@
 import React from 'react'
-import ProjectPage from '../../../ProjectPage/ProjectPage'
-import TextDescription from '../../../TextDescription/TextDescription'
-import TextImg from '../../../TextImg/TextImg'
+import ProjectPage, { ProjectProps } from '../ProjectPage/ProjectPage'
+import TextDescription from '../TextDescription/TextDescription'
+import TextImg from '../TextImg/TextImg'
 
 interface Props {
     primaryColor: string,
