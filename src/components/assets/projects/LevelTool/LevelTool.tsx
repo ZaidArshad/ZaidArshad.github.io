@@ -28,7 +28,6 @@ const LevelTool:React.FC<Props> = ({primaryColor, secondaryColor}) => {
         <TextImg
             title='Snappy to Smooth Dragging'
             className='center'
-            imgClass='img'
             imgSrc='https://user-images.githubusercontent.com/52565263/147491796-c7d1bdba-1401-4a72-9fee-a930291bb565.gif'>
                 The collision detection needs to change dynamically with where the user
                 clicks so that the drag and drop processis smooth. The origin of the texture
@@ -38,8 +37,6 @@ const LevelTool:React.FC<Props> = ({primaryColor, secondaryColor}) => {
 
         <TextImg
             title='Dynamic hitboxes'
-            className='text-img'
-            imgClass='img'
             imgSrc='https://user-images.githubusercontent.com/52565263/147493063-1f2ba307-4524-458e-9a5a-6c7e969965d6.gif'>
                 Since the origin is changing to make the dragging smooth, the hitboxes
                 need to match that. As the origin changes, the boundary where
@@ -58,8 +55,6 @@ const LevelTool:React.FC<Props> = ({primaryColor, secondaryColor}) => {
 
         <TextImg
             title='Resizing'
-            className='img-text'
-            imgClass='img'
             imgSrc='https://user-images.githubusercontent.com/52565263/152641448-5720dfa1-2d29-4fa6-a165-a5e4d83fbb9c.gif'>
                 When a platform is clicked, it can be resized by clicking the points
                 generated on the corners. Platforms cannot have a width or height smaller than 10 pixels. 

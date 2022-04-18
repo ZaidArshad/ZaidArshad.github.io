@@ -8,6 +8,7 @@
     position: sticky;
     top: 0px;
     background-color: white;
+    z-index: 1;
 }
 
 .back-button {
@@ -27,6 +28,10 @@
 .text-area h2 {
     text-align: center;
     font-size: 1.563vw;
+}
+
+.text-area h3 {
+    text-align: center;
 }
 
 .text-area h1 {

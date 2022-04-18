@@ -1,4 +1,5 @@
 import * as projectSvgs from '../assets/projects';
+import Decay from '../assets/projects/Decay/Decay';
 import LevelTool from '../assets/projects/LevelTool/LevelTool';
 import WatRe from '../assets/projects/WatRe/WatRe';
 
@@ -42,6 +43,9 @@ export const projects: Projects[] = [
         Front: projectSvgs.DecayFront,
         Back: projectSvgs.DecayBack,
         link: '/decay',
+        Page: Decay,
+        primaryColor: '#65D1FF',
+        secondayColor: '#0099BA'
     },
     {
         key: 4,

@@ -35,8 +35,6 @@ const WatRe:React.FC<Props> = ({primaryColor, secondaryColor}) => {
 
       <TextImg
         title='Daily Reminder'
-        className='text-img'
-        imgClass='img'
         imgSrc='https://user-images.githubusercontent.com/52565263/144075313-7e71d7c7-eb6e-4b89-97ab-e19fe4f694eb.png'>
             The user will be greeted every morning with a reminder to start drinking water.
             This notification cannot be closed unless the user opens the app. While this may
@@ -57,15 +55,12 @@ const WatRe:React.FC<Props> = ({primaryColor, secondaryColor}) => {
       <TextImg
         title='Button Phases'
         className='center'
-        imgClass='img'
         imgSrc='https://user-images.githubusercontent.com/52565263/144064606-92c6d0c1-5ecc-40b5-aec7-06ace5b39fdb.png'>
           The button has 3 phases.
       </TextImg>
 
       <TextImg
         title='Hourly Reminder'
-        className='text-img'
-        imgClass='img'
         imgSrc='https://user-images.githubusercontent.com/52565263/144075336-62d3d172-9e98-490d-a77f-c8cf4ef3b36e.png'>
             Every 1 hour and 30 minutes after the button is pressed
             there is a reminder to drink water again.
@@ -80,6 +75,7 @@ const WatRe:React.FC<Props> = ({primaryColor, secondaryColor}) => {
         imgSrc='https://user-images.githubusercontent.com/52565263/144073778-dd2c2d17-d974-41b8-8a3e-df70fda41811.gif'>
             The animated background is a pleasant feature to look at every time you open the app.
       </TextImg>
+
     </ProjectPage>
   )
 }
