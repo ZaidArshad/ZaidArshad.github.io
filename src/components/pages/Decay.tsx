@@ -3,7 +3,6 @@ import ProjectPage, { ProjectProps } from '../ProjectPage/ProjectPage'
 import TextDescription from '../TextDescription/TextDescription'
 import TextImg from '../TextImg/TextImg'
 
-
 const Decay:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
   return (
     <ProjectPage projectName='Decay' primaryColor={primaryColor} secondaryColor={secondaryColor}>

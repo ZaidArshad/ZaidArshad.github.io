@@ -1,7 +1,9 @@
 import * as projectSvgs from '../assets/projects';
 import Decay from '../pages/Decay';
 import DuckHunt from '../pages/DuckHunt';
+import Laps from '../pages/Laps';
 import LevelTool from '../pages/LevelTool';
+import SupplyTracker from '../pages/SupplyTracker';
 import WatRe from '../pages/WatRe';
 
 export interface Projects {
@@ -62,12 +64,18 @@ export const projects: Projects[] = [
         Front: projectSvgs.LapsFront,
         Back: projectSvgs.LapsBack,
         link: '/laps',
+        Page: Laps,
+        primaryColor: '#FE436D',
+        secondayColor: '#B81D40'
     },
     {
         key: 6,
         Front: projectSvgs.SupplyTrackerFront,
         Back: projectSvgs.SupplyTrackerBack,
         link: '/supply-tracker',
+        Page: SupplyTracker,
+        primaryColor: '#32BB79',
+        secondayColor: '#20955D'
     },
     {
         key: 7,

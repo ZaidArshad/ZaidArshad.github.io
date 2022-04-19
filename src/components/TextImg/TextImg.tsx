@@ -5,6 +5,7 @@ interface Props {
     imgSrc: string;
     imgClass?: string;
     className?: string;
+    borderRadius?: string;
 }
 
 const TextImg:React.FC<Props> = (props) => {
@@ -19,7 +20,7 @@ const TextImg:React.FC<Props> = (props) => {
                 {props.children}
             </p>
         </div>
-        <img className={props.imgClass} alt='' src={props.imgSrc}/>
+        <img className={props.imgClass} alt='' src={props.imgSrc} style={{borderRadius:props.borderRadius}}/>
     </div>
   )
 }
