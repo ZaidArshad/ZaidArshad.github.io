@@ -1,6 +1,8 @@
 import * as projectSvgs from '../assets/projects';
+import Bounce from '../pages/Bounce';
 import Decay from '../pages/Decay';
 import DuckHunt from '../pages/DuckHunt';
+import Gobblers from '../pages/Gobblers';
 import Laps from '../pages/Laps';
 import LevelTool from '../pages/LevelTool';
 import SupplyTracker from '../pages/SupplyTracker';
@@ -82,12 +84,18 @@ export const projects: Projects[] = [
         Front: projectSvgs.GobblersFront,
         Back: projectSvgs.GobblersBack,
         link: '/gobblers',
+        Page: Gobblers,
+        primaryColor: '#C474EA',
+        secondayColor: '#B740EF'
     },
     {
         key: 8,
         Front: projectSvgs.BounceFront,
         Back: projectSvgs.BounceBack,
         link: '/bounce',
+        Page: Bounce,
+        primaryColor: '#FF4343',
+        secondayColor: '#C22626'
     },
 ];
 

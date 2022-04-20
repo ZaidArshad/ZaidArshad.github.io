@@ -9,7 +9,7 @@ import * as iconSVGs from '../assets/icons/index';
 import DiamondCaps from '../DiamondCaps/DiamondCaps';
 
 const HomePage = () => {
-  // window.scroll(0,0);
+  window.scroll(0,0);
   return (
     <div>
       <div className='home-title'>
