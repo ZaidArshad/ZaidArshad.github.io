@@ -24,7 +24,7 @@ const Bounce:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
         <TextImg
           title='Controls'
           borderRadius='0px'
-          imgSrc='https://user-images.githubusercontent.com/52565263/144717313-1eb91146-bb54-4197-aa8e-a8759cdf7136.png'>
+          imgSrc='files/bounce/controls.png'>
             Arrow keys: Direction to the corresponding color to move to the bottom for the square to bounce on.
         </TextImg>
 
@@ -38,7 +38,7 @@ const Bounce:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
           title='High Score'
           borderRadius='0px'
           className='img-text'
-          imgSrc='https://user-images.githubusercontent.com/52565263/144717680-77315163-50be-4e88-a933-dd630835370a.gif'>
+          imgSrc='files/bounce/high-score.gif'>
             The high score system is made up of a simple reader/writer system for the
             generic text file highscores.txt. This was not the best way to do it as I
             have it writing raw text to the file that can easily break the game if manipulated.
@@ -49,7 +49,7 @@ const Bounce:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
         className='center'
         imgSrc=''>
         <video style={{paddingTop:'50px', width:'100%'}}
-            src='https://user-images.githubusercontent.com/52565263/144264028-13184e62-f1e9-41e9-9d22-d4b225a35bbd.mp4' controls/>
+            src='files/bounce/demo-video.mp4' controls/>
     </TextImg>
 
     </ProjectPage>

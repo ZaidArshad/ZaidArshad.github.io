@@ -1,13 +1,12 @@
 import { useState } from 'react';
 import './styles.css';
 import "../../App.css";
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const KeyCap:React.FC = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false)
   const secondaryColor = document.documentElement.style.getPropertyValue("--secondaryColor");
   const primaryColor = document.documentElement.style.getPropertyValue("--primaryColor");
-  const navigate = useNavigate();
 
   return (
 
@@ -28,11 +27,12 @@ const KeyCap:React.FC = () => {
             <path d="M58.5149 126.8C81.2389 103.855 117 68.0459 117 68.0459L116.895 56.8802L58.5149 115.555L0 56.8L0 68.0429C22.724 90.9878 35.7909 103.855 58.5149 126.8Z" fill="white"/>
         </g>
 
-        <path
-          className='hitbox'
-          onClick={() => {navigate('/')}}
-          d="M1 61.0644L54.5 114.564L108 61.0644V54.5L54.5 1L1 54.5V61.0644Z"
-          onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}/>
+        <Link to={'/'}>
+          <path
+            className='hitbox'
+            d="M1 61.0644L54.5 114.564L108 61.0644V54.5L54.5 1L1 54.5V61.0644Z"
+            onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}/>
+        </Link>
         <path
           className='animation-blocker'
           d="M58.5149 126.8C81.2389 103.855 117 68.0459 117 68.0459L116.895 56.8802L58.5149 115.555L0 56.8L0 68.0429C22.724 90.9878 35.7909 103.855 58.5149 126.8Z"/>

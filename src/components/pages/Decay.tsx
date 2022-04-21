@@ -38,7 +38,7 @@ const Decay:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
         <TextImg
             title='Joypad Controls'
             className='center'
-            imgSrc='https://user-images.githubusercontent.com/52565263/144463177-9e8fb257-9cee-4523-949e-9b30d750498f.png'>
+            imgSrc='files/decay/joypad-controls.png'>
                 I added controller support for this game because I think having
                 analog inputs for movements makes the game feel better.
         </TextImg>
@@ -47,7 +47,7 @@ const Decay:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
             title='Platforms'
             className='text-img'
             imgClass='img-platform'
-            imgSrc='https://user-images.githubusercontent.com/52565263/144451953-71f9ef08-825e-4579-8016-a742c08d1d52.gif'>
+            imgSrc='files/decay/platforms.gif'>
                 Each platform has its own health bar indicated by the color of
                 the rainbow, the closer it is to red the closer it is to disappearing.
                 You can only lower the health of a platform if you touch another platform previously. 
@@ -83,15 +83,15 @@ const Decay:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
         <p className='img center'>
             <div>
                 Death <br/>
-                <audio style={{width:'100%'}} controls src="sounds/slowdown.mp3"/>
+                <audio style={{width:'100%'}} controls src="files/decay/slowdown.mp3"/>
             </div>
             <div>
                 Reset <br/>
-                <audio style={{width:'100%'}} controls src="sounds/speedup.mp3"/>
+                <audio style={{width:'100%'}} controls src="files/decay/speedup.mp3"/>
             </div>
             <div>
                 Background Music <br/>
-                <audio style={{width:'100%'}} controls src="sounds/bg.mp3"/>
+                <audio style={{width:'100%'}} controls src="files/decay/bg.mp3"/>
             </div>
         </p>
     </div>
@@ -101,7 +101,7 @@ const Decay:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
         className='center'
         imgSrc=''>
         <video style={{paddingTop:'50px', width:'100%'}}
-            src='https://user-images.githubusercontent.com/52565263/144463495-e99b49ba-b62d-4aef-b372-d04477d43e59.mp4' controls/>
+            src='files/decay/demo-video.mp4' controls/>
     </TextImg>
 
 

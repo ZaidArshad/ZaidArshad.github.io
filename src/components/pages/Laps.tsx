@@ -26,7 +26,7 @@ const Laps:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
             title='Splash Screen'
             className='img-text'
             imgClass='img-phone'
-            imgSrc='https://user-images.githubusercontent.com/52565263/149638900-00b06785-c695-40a6-af90-87a32f967716.gif'>
+            imgSrc='files/laps/splash-screen.gif'>
                 Designing the splash screen was a fun thing to do because I
                 needed one to create time to establish a connection to location services. 
         </TextImg>
@@ -35,7 +35,7 @@ const Laps:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
             title='Recording a New Route'
             className='img-text'
             imgClass='img-phone'
-            imgSrc='https://user-images.githubusercontent.com/52565263/149638900-00b06785-c695-40a6-af90-87a32f967716.gif'>
+            imgSrc='files/laps/recording-a-new-route.gif'>
                 When recording a new route the user's marker will 
                 create a trail to indicate the path. A timer
                 will be counting the time it takes for the user to 
@@ -48,7 +48,7 @@ const Laps:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
             title='Finishing a Recorded Run'
             className='img-text'
             imgClass='img-phone'
-            imgSrc='https://user-images.githubusercontent.com/52565263/149639230-10a1aa05-4851-40cb-8bd4-593552305e6c.gif'>
+            imgSrc='files/laps/finishing-a-recorded-run.gif'>
                 Once the user clicks the finish button at the bottom of their screen their run
                 ends. A prompt shows up with their time, length, and textbox to set a name.
                 The run will then be saved once “confirm” is pressed.
@@ -58,7 +58,7 @@ const Laps:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
             title='Running Recorded Routes'
             className='img-text'
             imgClass='img-phone'
-            imgSrc='https://user-images.githubusercontent.com/52565263/155893411-9dd02149-2ee4-4d79-8ec4-20ce6b36cc84.gif'>
+            imgSrc='files/laps/running-recorded-routes.gif'>
                 To run a recorded route the user must click the arrow at the bottom
                 to show the list of routes. When clicked, a visual path will display
                 on the map and the camera will pan to it. The timer will commence
@@ -68,7 +68,7 @@ const Laps:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
         <TextImg
             title='Posting a New Best Time'
             className='center'
-            imgSrc='https://user-images.githubusercontent.com/52565263/155893423-308dfdd5-79e9-4757-90bf-16f06cd02d8a.png'>
+            imgSrc='files/laps/posting-a-new-best-time.png'>
                 When a new best time is posted a little text pop up will
                 show up with the time and can be dismissed with a simple click.
         </TextImg>

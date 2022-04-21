@@ -10,9 +10,9 @@ const DuckHunt:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
         <h2> Hackathon Project by Zaid Arshad & Daniel Nguyen - Developed on February 12 2022. </h2>
 
         <div className='collage-phone'>
-          <img src="https://user-images.githubusercontent.com/52565263/155893970-7d138950-3c50-4987-b42d-16cf8e6b0b6c.png"/>
-          <img src="https://user-images.githubusercontent.com/52565263/155893971-c7e42e47-fb4b-4079-ab2d-6dabfb30bb0e.png"/>
-          <img src="https://user-images.githubusercontent.com/52565263/155893972-12518afa-ab63-44ec-9415-89216b3a0f06.png"/>
+          <img src="files/duckhunt/ss1.png"/>
+          <img src="files/duckhunt/ss2.png"/>
+          <img src="files/duckhunt/ss3.png"/>
         </div>
 
         <TextDescription title='Inspiration'>
@@ -75,7 +75,7 @@ const DuckHunt:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
           className='center'
           imgSrc=''>
           <video style={{paddingTop:'50px', width:'20%'}}
-              src='https://user-images.githubusercontent.com/52565263/163834018-7c51de4c-dfa3-422f-be49-354aa99cb1f9.mp4' controls/>
+              src='files/duckhunt/demo-video.mp4' controls/>
         </TextImg>
 
     </ProjectPage>
