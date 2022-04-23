@@ -7,6 +7,13 @@ export interface Props {
     link: string;
 }  
 
+/**
+ * Diamond button component that goes to a link
+ * @param Front SVG of the button in an idle state 
+ * @param Back SVG of the button when hovered
+ * @param link Link to navigate to when clicked
+ * @returns React.FC<Props>
+ */
 const DiamondCaps:React.FC<Props> = ({Front, Back, link}) => {
     const [isHovered, setIsHovered] = useState<boolean>(false)
 

@@ -7,6 +7,13 @@ interface Props {
     secondaryColor?: string;
 }
 
+/**
+ * Component for text with 3D effect 
+ * @param fontSize Size of the font
+ * @param primaryColor Outline stroke color
+ * @param secondaryColor Fill of the front text
+ * @returns 
+ */
 const PopText: React.FC<Props> = (props) => {
     const backStyle = {
         color: 'white',

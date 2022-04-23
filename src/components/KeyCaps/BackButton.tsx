@@ -3,6 +3,9 @@ import './styles.css';
 import "../../App.css";
 import { Link } from 'react-router-dom';
 
+/**
+ * Component of the back button that navigates to the homepage when pressed 
+ */
 const KeyCap:React.FC = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false)
   const secondaryColor = document.documentElement.style.getPropertyValue("--secondaryColor");

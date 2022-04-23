@@ -8,6 +8,10 @@ import TextDescription from '../TextDescription/TextDescription';
 import * as iconSVGs from '../assets/icons/index';
 import DiamondCaps from '../DiamondCaps/DiamondCaps';
 
+/**
+ * Component of the homepage that holds the buttons to project and about 
+ * @returns React Component
+ */
 const HomePage = () => {
   window.scroll(0,0);
   return (

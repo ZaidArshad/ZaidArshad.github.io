@@ -13,6 +13,12 @@ export interface ProjectProps {
   secondaryColor: string,
 }
 
+/**
+ * Component for the header of a project's page
+ * @param primaryColor Main color of the project
+ * @param secondaryColor Secondary color of the project
+ * @returns 
+ */
 const ProjectPage:React.FC<ProjectPageProps> = (props) => {
   window.scroll(0,0);
     document.documentElement.style.setProperty("--primaryColor", props.primaryColor);

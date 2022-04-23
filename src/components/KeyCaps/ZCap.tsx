@@ -4,6 +4,10 @@ import "../../App.css";
 import { ReactComponent as ZLogoFront} from '../assets/zlogo/z-logo.svg'
 import { ReactComponent as ZLogoBack} from '../assets/zlogo/z-logo-pressed.svg'
 
+/**
+ * Component that holds the title z-button
+ * @returns React.FC
+ */
 const KeyCap:React.FC = () => {
   const [isHovered, setIsHovered] = useState<boolean>(false)
 

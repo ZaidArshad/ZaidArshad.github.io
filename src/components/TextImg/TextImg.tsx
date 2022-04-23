@@ -8,6 +8,15 @@ interface Props {
     borderRadius?: string;
 }
 
+/**
+ * Component with title, block of text and an image
+ * @param title Title of the section
+ * @param imgSrc Source of the image
+ * @param imgClass CSS class for the image
+ * @param className CSS class for the component text-img | center | img-text
+ * @param borderRadius Rounded corners for the image
+ * @returns React.FC<Props>
+ */
 const TextImg:React.FC<Props> = (props) => {
     const divClass:string = props.className === 'center' ?  'center' : 'text-img-text';
   return (
