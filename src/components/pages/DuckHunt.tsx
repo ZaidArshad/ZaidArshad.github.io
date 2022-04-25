@@ -74,7 +74,7 @@ const DuckHunt:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
           title='Demo Video'
           className='center'
           imgSrc=''>
-          <video style={{paddingTop:'50px', width:'20%'}}
+          <video className='video-phone'
               src='files/duckhunt/demo-video.mp4' controls/>
         </TextImg>
 

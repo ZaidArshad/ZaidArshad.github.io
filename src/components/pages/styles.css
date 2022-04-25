@@ -7,8 +7,18 @@
     margin: 10px;
 }
 
+.video-phone {
+    padding-top: 50px;
+    width: 25%;
+}
+
 @media (max-width: 700px) { 
     .collage-phone img {
         width: 23vw;
+    }
+
+    .video-phone {
+        padding-top: 50px;
+        width: 80%;
     }
 }

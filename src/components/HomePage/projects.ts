@@ -1,4 +1,5 @@
 import * as projectSvgs from '../assets/projects';
+import Boatxz from '../pages/Boatxz';
 import Bounce from '../pages/Bounce';
 import Decay from '../pages/Decay';
 import DuckHunt from '../pages/DuckHunt';
@@ -24,6 +25,9 @@ export const projects: Projects[] = [
         Front: projectSvgs.BoatxzFront,
         Back: projectSvgs.BoatxzBack,
         link: '/boatxz',
+        Page: Boatxz,
+        primaryColor: '#62E160',
+        secondayColor: '#1F9801'
     },
     {
         key: 1,
