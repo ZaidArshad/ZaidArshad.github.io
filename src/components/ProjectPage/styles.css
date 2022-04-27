@@ -44,6 +44,11 @@
     line-height: 2;
 }
 
+.mp3-title {
+    font-size: 1.354vw;
+    line-height: 2;
+}
+
 .text-area .section:nth-child(2n-1) {
     color: white;
     background-color: var(--secondaryColor);
@@ -52,6 +57,10 @@
 .text-area div {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+.foot {
+    padding-top: 30px;
 }
 
 @media (max-width: 700px) {

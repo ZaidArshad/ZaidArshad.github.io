@@ -1,16 +1,12 @@
+import DiamondCaps from "../DiamondCaps/DiamondCaps";
 import BackButton from "../KeyCaps/BackButton";
 import PopText from "../PopText/PopText"
 import './styles.css'
-
-interface ProjectPageProps {
-    primaryColor: string;
-    secondaryColor: string;
-    projectName: string;
-}
+import * as iconSVGs from '../assets/icons/index';
+import { Project } from "../HomePage/projects";
 
 export interface ProjectProps {
-  primaryColor: string,
-  secondaryColor: string,
+    project: Project
 }
 
 /**
@@ -19,17 +15,17 @@ export interface ProjectProps {
  * @param secondaryColor Secondary color of the project
  * @returns 
  */
-const ProjectPage:React.FC<ProjectPageProps> = (props) => {
+const ProjectPage:React.FC<ProjectProps> = (props) => {
   window.scroll(0,0);
-    document.documentElement.style.setProperty("--primaryColor", props.primaryColor);
-    document.documentElement.style.setProperty("--secondaryColor", props.secondaryColor);
+    document.documentElement.style.setProperty("--primaryColor", props.project.primaryColor);
+    document.documentElement.style.setProperty("--secondaryColor", props.project.secondaryColor);
 
   return (
     <div className='webpage'>
       <div className='sticky'>
         <div className="project-title">
-          <PopText primaryColor={props.primaryColor} secondaryColor={props.secondaryColor} >
-            {props.projectName}
+          <PopText primaryColor={props.project.primaryColor} secondaryColor={props.project.secondaryColor} >
+            {props.project.name}
           </PopText>
         </div>
         <BackButton/>
@@ -37,6 +33,10 @@ const ProjectPage:React.FC<ProjectPageProps> = (props) => {
 
       <div className='text-area'>
           {props.children}
+      </div>
+
+      <div className='foot'>
+      <DiamondCaps Front={iconSVGs.GithubFront} Back={iconSVGs.GithubBack} link={'https://github.com/ZaidArshad'} bgColor={'white'}/>
       </div>
     </div>
   )

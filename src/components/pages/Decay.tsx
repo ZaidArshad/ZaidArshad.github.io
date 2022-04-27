@@ -3,9 +3,9 @@ import ProjectPage, { ProjectProps } from '../ProjectPage/ProjectPage'
 import TextDescription from '../TextDescription/TextDescription'
 import TextImg from '../TextImg/TextImg'
 
-const Decay:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
+const Decay:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage projectName='Decay' primaryColor={primaryColor} secondaryColor={secondaryColor}>
+    <ProjectPage project={project}>
         <h2> Project by Zaid Arshad - Developed from August to December 2020. </h2>
         <h3>
             Level Tool Support added December 2021.
@@ -80,7 +80,7 @@ const Decay:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
                 could be improved greatly with added features of sound effects and music.
             </p>
         </div>
-        <p className='img center'>
+        <div className='img center mp3-title'>
             <div>
                 Death <br/>
                 <audio style={{width:'100%'}} controls src="files/decay/slowdown.mp3"/>
@@ -93,7 +93,7 @@ const Decay:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
                 Background Music <br/>
                 <audio style={{width:'100%'}} controls src="files/decay/bg.mp3"/>
             </div>
-        </p>
+        </div>
     </div>
 
     <TextImg

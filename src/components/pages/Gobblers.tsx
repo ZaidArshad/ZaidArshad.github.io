@@ -2,9 +2,9 @@ import React from 'react'
 import ProjectPage, { ProjectProps } from '../ProjectPage/ProjectPage'
 import TextDescription from '../TextDescription/TextDescription'
 
-const Gobblers:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
+const Gobblers:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage projectName='Gobblers' primaryColor={primaryColor} secondaryColor={secondaryColor}>
+    <ProjectPage project={project}>
         <h2> Hackathon Project by Zaid Arshad, Daniel Nguyen & Devin Dang - Developed on November 27 2021. </h2>
 
         <TextDescription title='About'>

@@ -8,98 +8,109 @@ import Laps from '../pages/Laps';
 import LevelTool from '../pages/LevelTool';
 import SupplyTracker from '../pages/SupplyTracker';
 import WatRe from '../pages/WatRe';
+import { ProjectProps } from '../ProjectPage/ProjectPage';
 
-export interface Projects {
+export interface Project {
+    name: string;
     key: number;
     Front: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
     Back: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
     link: string;
-    Page?: React.FC<any> | undefined;
-    primaryColor?: string;
-    secondayColor?: string;
+    Page: React.FC<ProjectProps>;
+    primaryColor: string;
+    secondaryColor: string;
   }
 
-export const projects: Projects[] = [
+export const projects: Project[] = [
     {
+        name: 'Boatxz',
         key: 0,
         Front: projectSvgs.BoatxzFront,
         Back: projectSvgs.BoatxzBack,
         link: '/boatxz',
         Page: Boatxz,
         primaryColor: '#62E160',
-        secondayColor: '#1F9801'
+        secondaryColor: '#1F9801'
     },
     {
+        name: 'WatRe',
         key: 1,
         Front: projectSvgs.WatReFront,
         Back: projectSvgs.WatReBack,
         link: '/watre',
         Page: WatRe,
         primaryColor: '#3E68FF',
-        secondayColor: '#183AB2'
+        secondaryColor: '#183AB2'
     },
     {
+        name: 'Decay Level Tool',
         key: 2,
         Front: projectSvgs.LevelToolFront,
         Back: projectSvgs.LevelToolBack,
         link: '/level-tool',
         Page: LevelTool,
         primaryColor: '#FF419C',
-        secondayColor: '#AF0054'
+        secondaryColor: '#AF0054'
     },
     {
+        name: 'Decay',
         key: 3,
         Front: projectSvgs.DecayFront,
         Back: projectSvgs.DecayBack,
         link: '/decay',
         Page: Decay,
         primaryColor: '#65D1FF',
-        secondayColor: '#0099BA'
+        secondaryColor: '#0099BA'
     },
     {
+        name: 'Duck Hunt',
         key: 4,
         Front: projectSvgs.DuckHuntFront,
         Back: projectSvgs.DuckHuntBack,
         link: '/duck-hunt',
         Page: DuckHunt,
         primaryColor: '#FFC700',
-        secondayColor: '#E19400'
+        secondaryColor: '#E19400'
     },
     {
+        name: 'Laps',
         key: 5,
         Front: projectSvgs.LapsFront,
         Back: projectSvgs.LapsBack,
         link: '/laps',
         Page: Laps,
         primaryColor: '#FE436D',
-        secondayColor: '#B81D40'
+        secondaryColor: '#B81D40'
     },
     {
+        name: 'Supply Tracker',
         key: 6,
         Front: projectSvgs.SupplyTrackerFront,
         Back: projectSvgs.SupplyTrackerBack,
         link: '/supply-tracker',
         Page: SupplyTracker,
         primaryColor: '#32BB79',
-        secondayColor: '#20955D'
+        secondaryColor: '#20955D'
     },
     {
+        name: 'Gobblers',
         key: 7,
         Front: projectSvgs.GobblersFront,
         Back: projectSvgs.GobblersBack,
         link: '/gobblers',
         Page: Gobblers,
         primaryColor: '#C474EA',
-        secondayColor: '#B740EF'
+        secondaryColor: '#B740EF'
     },
     {
+        name: 'Bounce',
         key: 8,
         Front: projectSvgs.BounceFront,
         Back: projectSvgs.BounceBack,
         link: '/bounce',
         Page: Bounce,
         primaryColor: '#FF4343',
-        secondayColor: '#C22626'
+        secondaryColor: '#C22626'
     },
 ];
 

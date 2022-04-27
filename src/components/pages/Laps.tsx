@@ -3,9 +3,9 @@ import ProjectPage, { ProjectProps } from '../ProjectPage/ProjectPage'
 import TextDescription from '../TextDescription/TextDescription'
 import TextImg from '../TextImg/TextImg'
 
-const Laps:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
+const Laps:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage projectName='Laps' primaryColor={primaryColor} secondaryColor={secondaryColor}>
+    <ProjectPage project={project}>
         <h2> Project by Zaid Arshad - Developed from April to December 2021. </h2>
 
         <TextDescription title='Description'>

@@ -3,14 +3,9 @@ import ProjectPage, { ProjectProps } from '../ProjectPage/ProjectPage'
 import TextDescription from '../TextDescription/TextDescription'
 import TextImg from '../TextImg/TextImg'
 
-interface Props {
-    primaryColor: string,
-    secondaryColor: string,
-  }
-
-const LevelTool:React.FC<Props> = ({primaryColor, secondaryColor}) => {
+const LevelTool:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage projectName='Decay Level Tool' primaryColor={primaryColor} secondaryColor={secondaryColor}>
+    <ProjectPage project={project}>
         <h2> Project by Zaid Arshad - Developed from December 2021 to January 2022. </h2>
 
         <TextDescription title='Description'>

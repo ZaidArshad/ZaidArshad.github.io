@@ -4,9 +4,9 @@ import TextDescription from '../TextDescription/TextDescription'
 import TextImg from '../TextImg/TextImg'
 
 
-const WatRe:React.FC<ProjectProps> = ({primaryColor, secondaryColor}) => {
+const WatRe:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage projectName='WatRe' primaryColor={primaryColor} secondaryColor={secondaryColor}>
+    <ProjectPage project={project}>
       <h2> Project by Zaid Arshad. Developed from June to August 2020 </h2>
       <h3> REST API compatibility added in January 2022. </h3>
 
