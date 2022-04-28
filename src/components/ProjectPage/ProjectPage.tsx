@@ -36,7 +36,7 @@ const ProjectPage:React.FC<ProjectProps> = (props) => {
       </div>
 
       <div className='foot'>
-      <DiamondCaps Front={iconSVGs.GithubFront} Back={iconSVGs.GithubBack} link={'https://github.com/ZaidArshad'} bgColor={'white'}/>
+      <DiamondCaps Front={iconSVGs.GithubFront} Back={iconSVGs.GithubBack} link={props.project.github} bgColor={'white'}/>
       </div>
     </div>
   )

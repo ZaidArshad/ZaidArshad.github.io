@@ -19,6 +19,7 @@ export interface Project {
     Page: React.FC<ProjectProps>;
     primaryColor: string;
     secondaryColor: string;
+    github: string;
   }
 
 export const projects: Project[] = [
@@ -30,7 +31,8 @@ export const projects: Project[] = [
         link: '/boatxz',
         Page: Boatxz,
         primaryColor: '#62E160',
-        secondaryColor: '#1F9801'
+        secondaryColor: '#1F9801',
+        github: 'https://github.com/ZaidArshad/Boatxz',
     },
     {
         name: 'WatRe',
@@ -40,7 +42,8 @@ export const projects: Project[] = [
         link: '/watre',
         Page: WatRe,
         primaryColor: '#3E68FF',
-        secondaryColor: '#183AB2'
+        secondaryColor: '#183AB2',
+        github: 'https://github.com/ZaidArshad/WatRe',
     },
     {
         name: 'Decay Level Tool',
@@ -50,7 +53,8 @@ export const projects: Project[] = [
         link: '/level-tool',
         Page: LevelTool,
         primaryColor: '#FF419C',
-        secondaryColor: '#AF0054'
+        secondaryColor: '#AF0054',
+        github: 'https://github.com/ZaidArshad/Decay-Level-Tool',
     },
     {
         name: 'Decay',
@@ -60,7 +64,8 @@ export const projects: Project[] = [
         link: '/decay',
         Page: Decay,
         primaryColor: '#65D1FF',
-        secondaryColor: '#0099BA'
+        secondaryColor: '#0099BA',
+        github: 'https://github.com/ZaidArshad/Decay',
     },
     {
         name: 'Duck Hunt',
@@ -70,7 +75,8 @@ export const projects: Project[] = [
         link: '/duck-hunt',
         Page: DuckHunt,
         primaryColor: '#FFC700',
-        secondaryColor: '#E19400'
+        secondaryColor: '#E19400',
+        github: 'https://github.com/ZaidArshad/SOSY-Hacks-Duck-Hunt',
     },
     {
         name: 'Laps',
@@ -80,7 +86,8 @@ export const projects: Project[] = [
         link: '/laps',
         Page: Laps,
         primaryColor: '#FE436D',
-        secondaryColor: '#B81D40'
+        secondaryColor: '#B81D40',
+        github: 'https://github.com/ZaidArshad/Laps',
     },
     {
         name: 'Supply Tracker',
@@ -90,7 +97,8 @@ export const projects: Project[] = [
         link: '/supply-tracker',
         Page: SupplyTracker,
         primaryColor: '#32BB79',
-        secondaryColor: '#20955D'
+        secondaryColor: '#20955D',
+        github: 'https://github.com/ZaidArshad/Web-Consumable-Tracker',
     },
     {
         name: 'Gobblers',
@@ -100,7 +108,8 @@ export const projects: Project[] = [
         link: '/gobblers',
         Page: Gobblers,
         primaryColor: '#C474EA',
-        secondaryColor: '#B740EF'
+        secondaryColor: '#B740EF',
+        github: 'https://github.com/ZaidArshad/SFU-CS-Fall-Hacks-2021',
     },
     {
         name: 'Bounce',
@@ -110,7 +119,8 @@ export const projects: Project[] = [
         link: '/bounce',
         Page: Bounce,
         primaryColor: '#FF4343',
-        secondaryColor: '#C22626'
+        secondaryColor: '#C22626',
+        github: 'https://github.com/ZaidArshad/Bounce',
     },
 ];
 
