@@ -21,7 +21,7 @@ const KeyCap:React.FC = () => {
         </g>
         <path
           className='hitbox'
-          onClick={() => {window.scroll(0, 10000)}}
+          onClick={() => {isHovered && window.scroll(0, 10000)}}
           d="M1 216.292V242.708L216.292 458L431.584 242.708V216.292M1 216.292L216.292 431.584L431.584 216.292M1 216.292L216.292 1L431.584 216.292"
           onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}/>
         <path
