@@ -32,8 +32,8 @@ const Boatxz:React.FC<ProjectProps> = ({project}) => {
 
         <TextImg
             title='Single Player'
-            className='center'
-            imgSrc=''>
+            className='img-text'
+            imgSrc='/files/Boatxz/singleplayer.gif'>
             I designed and created 6 levels to challenge the player's mechanics 
             and maneuverability in the boat. These levels were modeled in 
             Blender in order for the water texture to properly be set. 
@@ -53,7 +53,7 @@ const Boatxz:React.FC<ProjectProps> = ({project}) => {
 
         <TextImg
           title='Multiplayer'
-          imgSrc=''>
+          imgSrc='/files/Boatxz/multiplayer.gif'>
             I created this game with multiplayer games in mind. There is a race against each 
             other where the first person to cross the last post wins. Another mode is boathunt, 
             where one person has 5 minutes to catch the other boats. If all hiders have not been 
