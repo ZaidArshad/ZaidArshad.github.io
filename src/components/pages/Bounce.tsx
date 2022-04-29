@@ -5,7 +5,7 @@ import TextImg from '../TextImg/TextImg'
 
 const Bounce:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage project={project}>
+    <ProjectPage project={project} gitBG={'white'}>
         <h2> Project by Zaid Arshad - Developed from June to July 2019 </h2>
 
         <TextDescription title='Description'>

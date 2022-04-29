@@ -23,7 +23,7 @@ const KepCap:React.FC<KeyCapProps> = ({Front, Back, link}) => {
     <svg className='keycap-svg' viewBox="0 0 545 368" fill="none" xmlns="http://www.w3.org/2000/svg" >
       
       <Back/>
-      <g className={(isHovered) ? 'keycap-hover' : 'keycap'}>
+      <g className={isHovered ? 'keycap-hover' : 'keycap'}>
         <Front/>
       </g>
       <path className='animation-blocker' d="M0 368V345H521.426V0H544.5V368H0Z"/>

@@ -5,7 +5,7 @@ import TextImg from '../TextImg/TextImg'
 
 const SupplyTracker:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage project={project}>
+    <ProjectPage project={project} gitBG={'white'}>
         <h2> Project by Zaid Arshad - Developed from September to December 2021 </h2>
 
         <TextDescription title='Description'>

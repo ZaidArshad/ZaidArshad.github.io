@@ -7,19 +7,20 @@ import { Project } from "../HomePage/projects";
 
 export interface ProjectProps {
     project: Project
+    gitBG?: string
 }
 
 /**
  * Component for the header of a project's page
- * @param primaryColor Main color of the project
- * @param secondaryColor Secondary color of the project
+ * @param project Main color of the project
+ * @param gitBG Background of github button
  * @returns 
  */
 const ProjectPage:React.FC<ProjectProps> = (props) => {
   window.scroll(0,0);
     document.documentElement.style.setProperty("--primaryColor", props.project.primaryColor);
     document.documentElement.style.setProperty("--secondaryColor", props.project.secondaryColor);
-
+    
   return (
     <div className='webpage'>
       <div className='sticky'>
@@ -33,10 +34,9 @@ const ProjectPage:React.FC<ProjectProps> = (props) => {
 
       <div className='text-area'>
           {props.children}
-      </div>
-
-      <div className='foot'>
-      <DiamondCaps Front={iconSVGs.GithubFront} Back={iconSVGs.GithubBack} link={props.project.github} bgColor={'white'}/>
+          <div className='foot section'>
+            <DiamondCaps Front={iconSVGs.GithubFront} Back={iconSVGs.GithubBack} link={props.project.github} bgColor={props.gitBG}/>
+          </div>
       </div>
     </div>
   )

@@ -6,7 +6,7 @@ import './styles.css'
 
 const DuckHunt:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage project={project}>
+    <ProjectPage project={project} gitBG={project.secondaryColor}>
         <h2> Hackathon Project by Zaid Arshad & Daniel Nguyen - Developed on February 12 2022. </h2>
 
         <div className='collage-phone'>

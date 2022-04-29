@@ -5,7 +5,7 @@ import TextImg from '../TextImg/TextImg'
 
 const Decay:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage project={project}>
+    <ProjectPage project={project} gitBG={'white'}>
         <h2> Project by Zaid Arshad - Developed from August to December 2020. </h2>
         <h3>
             Level Tool Support added December 2021.

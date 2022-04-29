@@ -54,13 +54,14 @@
     background-color: var(--secondaryColor);
 }
 
-.text-area div {
+.section {
     padding-top: 30px;
     padding-bottom: 30px;
 }
 
 .foot {
     padding-top: 30px;
+    padding-bottom: 0px;
 }
 
 @media (max-width: 700px) {

@@ -4,7 +4,7 @@ import TextDescription from '../TextDescription/TextDescription'
 
 const Gobblers:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage project={project}>
+    <ProjectPage project={project} gitBG={project.secondaryColor}>
         <h2> Hackathon Project by Zaid Arshad, Daniel Nguyen & Devin Dang - Developed on November 27 2021. </h2>
 
         <TextDescription title='About'>

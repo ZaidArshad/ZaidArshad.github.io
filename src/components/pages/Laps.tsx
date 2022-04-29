@@ -5,7 +5,7 @@ import TextImg from '../TextImg/TextImg'
 
 const Laps:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage project={project}>
+    <ProjectPage project={project} gitBG={project.secondaryColor}>
         <h2> Project by Zaid Arshad - Developed from April to December 2021. </h2>
 
         <TextDescription title='Description'>

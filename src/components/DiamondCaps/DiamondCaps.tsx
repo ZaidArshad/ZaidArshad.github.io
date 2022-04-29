@@ -31,7 +31,7 @@ const DiamondCaps:React.FC<Props> = ({Front, Back, link, bgColor}) => {
           
           <path
             className='hitbox'
-            onMouseDown={() => {window.open(link)}}
+            onMouseDown={() => {isHovered && window.open(link)}}
             d="M1 61.0644L54.5 114.564L108 61.0644V54.5L54.5 1L1 54.5V61.0644Z"
             onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}/>
           <path

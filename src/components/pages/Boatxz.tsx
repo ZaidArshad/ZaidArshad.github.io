@@ -5,7 +5,7 @@ import TextImg from '../TextImg/TextImg'
 
 const Boatxz:React.FC<ProjectProps> = ({project}) => {
   return (
-    <ProjectPage project={project}>
+    <ProjectPage project={project} gitBG={'white'}>
         <h2> Project by Zaid Arshad - Developed from January 2022 to April 2022 </h2>
 
         <TextDescription title='Description'>
