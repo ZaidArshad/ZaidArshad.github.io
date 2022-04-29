@@ -10,9 +10,9 @@ const DuckHunt:React.FC<ProjectProps> = ({project}) => {
         <h2> Hackathon Project by Zaid Arshad & Daniel Nguyen - Developed on February 12 2022. </h2>
 
         <div className='collage-phone'>
-          <img src="files/duckhunt/ss1.png"/>
-          <img src="files/duckhunt/ss2.png"/>
-          <img src="files/duckhunt/ss3.png"/>
+          <img src="files/duckhunt/ss1.png" alt='screenshot 1'/>
+          <img src="files/duckhunt/ss2.png" alt='screenshot 2'/>
+          <img src="files/duckhunt/ss3.png" alt='screenshot 3'/>
         </div>
 
         <TextDescription title='Inspiration'>

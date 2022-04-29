@@ -70,7 +70,7 @@ const Decay:React.FC<ProjectProps> = ({project}) => {
           is a lot going on in Game.cpp.
       </TextDescription>
 
-      <div className={'text-img' + ' section'}>
+      <div className={'text-img section'}>
         <div className='text-img-text'>
             <h1>
                 Sound
