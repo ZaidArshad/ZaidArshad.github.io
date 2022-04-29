@@ -11,7 +11,7 @@ const Boatxz:React.FC<ProjectProps> = ({project}) => {
         <TextDescription title='Description'>
             Boatxz is a 3D game made in Unity that challenges the player's 
             thumb dexterity by controlling a boat with both joysticks. It 
-            features several game modes both single and multiplayer. 
+            features several game modes both single and multiplayer. aaaaa
         </TextDescription>
 
         <TextDescription title='Experience'>
