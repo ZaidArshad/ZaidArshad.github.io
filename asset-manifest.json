@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.baae3a1a.css",
-    "main.js": "/static/js/main.e192ddbf.js",
+    "main.js": "/static/js/main.8ef516ba.js",
     "static/media/leveltool-cap-pressed.svg": "/static/media/leveltool-cap-pressed.8a5ab4b3c81a5b99c2b338d5dac8677d.svg",
     "static/media/supplytracker-cap-pressed.svg": "/static/media/supplytracker-cap-pressed.214670848232e537a096e7ea09ce6dfe.svg",
     "static/media/gobblers-cap-pressed.svg": "/static/media/gobblers-cap-pressed.c1ee97010549e9a8ba92959b6753699d.svg",
@@ -32,10 +32,10 @@
     "static/media/decay-cap.svg": "/static/media/decay-cap.6ae751bd370d8c9dd60501758efa77cd.svg",
     "index.html": "/index.html",
     "main.baae3a1a.css.map": "/static/css/main.baae3a1a.css.map",
-    "main.e192ddbf.js.map": "/static/js/main.e192ddbf.js.map"
+    "main.8ef516ba.js.map": "/static/js/main.8ef516ba.js.map"
   },
   "entrypoints": [
     "static/css/main.baae3a1a.css",
-    "static/js/main.e192ddbf.js"
+    "static/js/main.8ef516ba.js"
   ]
 }
