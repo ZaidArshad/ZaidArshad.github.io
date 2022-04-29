@@ -23,7 +23,7 @@ const Boatxz:React.FC<ProjectProps> = ({project}) => {
 
         <TextImg
           title='Mechanics'
-          imgSrc='./files/Boatxz/rowing.gif'>
+          imgSrc='files/boatxz/rowing.gif'>
             Using the sticks you row your boat. Movement only occurs when the 
             paddles are in the water and the paddles are moved back and forth. 
             You turn using the paddles in the same way a real boat does. You 
@@ -33,7 +33,7 @@ const Boatxz:React.FC<ProjectProps> = ({project}) => {
         <TextImg
             title='Single Player'
             className='img-text'
-            imgSrc='./files/Boatxz/singleplayer.gif'>
+            imgSrc='files/boatxz/singleplayer.gif'>
             I designed and created 6 levels to challenge the player's mechanics 
             and maneuverability in the boat. These levels were modeled in 
             Blender in order for the water texture to properly be set. 
@@ -43,7 +43,7 @@ const Boatxz:React.FC<ProjectProps> = ({project}) => {
           title='Speedrun'
           className='center'
           borderRadius='20px'
-          imgSrc='./files/Boatxz/speedrun.gif'>
+          imgSrc='files/boatxz/speedrun.gif'>
             I used a linked list for the checkpoints. This way I only need to keep track of the
             last checkpoint that the user has passed through. If the checkpoint they cross
             through is not the next checkpoint of the last checkpoint they crossed then
@@ -53,7 +53,7 @@ const Boatxz:React.FC<ProjectProps> = ({project}) => {
 
         <TextImg
           title='Multiplayer'
-          imgSrc='../files/Boatxz/multiplayer.gif'>
+          imgSrc='files/boatxz/multiplayer.gif'>
             I created this game with multiplayer games in mind. There is a race against each 
             other where the first person to cross the last post wins. Another mode is boathunt, 
             where one person has 5 minutes to catch the other boats. If all hiders have not been 
