@@ -9,9 +9,6 @@ const Boatxz:React.FC<ProjectProps> = ({project}) => {
         <h2> Project by Zaid Arshad - Developed from January 2022 to April 2022 </h2>
 
         <TextDescription title='Description'>
-            Boatxz is a 3D game made in Unity that challenges the player's 
-            thumb dexterity by controlling a boat with both joysticks. It 
-            features several game modes both single and multiplayer. 
         </TextDescription>
 
         <TextDescription title='Experience'>
