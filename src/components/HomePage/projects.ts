@@ -20,20 +20,17 @@ export interface Project {
     primaryColor: string;
     secondaryColor: string;
     github: string;
-  }
+    description: string;
+    languages: string[];
+};
 
-export const projects: Project[] = [
-    {
-        name: 'Boatxz',
-        key: 0,
-        Front: projectSvgs.BoatxzFront,
-        Back: projectSvgs.BoatxzBack,
-        link: '/boatxz',
-        Page: Boatxz,
-        primaryColor: '#62E160',
-        secondaryColor: '#1F9801',
-        github: 'https://github.com/ZaidArshad/Boatxz',
-    },
+export interface ProjectGroups {
+    mobile: Project[];
+    games: Project[];
+    tools: Project[];
+}
+
+export const mobileProjects: Project[] = [
     {
         name: 'WatRe',
         key: 1,
@@ -44,28 +41,8 @@ export const projects: Project[] = [
         primaryColor: '#3E68FF',
         secondaryColor: '#183AB2',
         github: 'https://github.com/ZaidArshad/WatRe',
-    },
-    {
-        name: 'Decay Level Tool',
-        key: 2,
-        Front: projectSvgs.LevelToolFront,
-        Back: projectSvgs.LevelToolBack,
-        link: '/level-tool',
-        Page: LevelTool,
-        primaryColor: '#FF419C',
-        secondaryColor: '#AF0054',
-        github: 'https://github.com/ZaidArshad/Decay-Level-Tool',
-    },
-    {
-        name: 'Decay',
-        key: 3,
-        Front: projectSvgs.DecayFront,
-        Back: projectSvgs.DecayBack,
-        link: '/decay',
-        Page: Decay,
-        primaryColor: '#65D1FF',
-        secondaryColor: '#0099BA',
-        github: 'https://github.com/ZaidArshad/Decay',
+        description: 'Web App',
+        languages: ['Java', 'C#', 'Python']
     },
     {
         name: 'Duck Hunt',
@@ -77,6 +54,8 @@ export const projects: Project[] = [
         primaryColor: '#FFC700',
         secondaryColor: '#E19400',
         github: 'https://github.com/ZaidArshad/SOSY-Hacks-Duck-Hunt',
+        description: 'Android App',
+        languages: ['Kotlin']
     },
     {
         name: 'Laps',
@@ -88,17 +67,37 @@ export const projects: Project[] = [
         primaryColor: '#FE436D',
         secondaryColor: '#B81D40',
         github: 'https://github.com/ZaidArshad/Laps',
+        description: 'Android App',
+        languages: ['Kotlin']
+    },
+]
+
+export const gameProjects: Project[] = [
+    {
+        name: 'Boatxz',
+        key: 0,
+        Front: projectSvgs.BoatxzFront,
+        Back: projectSvgs.BoatxzBack,
+        link: '/boatxz',
+        Page: Boatxz,
+        primaryColor: '#62E160',
+        secondaryColor: '#1F9801',
+        github: 'https://github.com/ZaidArshad/Boatxz',
+        description: '3D Party',
+        languages: ['C#']
     },
     {
-        name: 'Supply Tracker',
-        key: 6,
-        Front: projectSvgs.SupplyTrackerFront,
-        Back: projectSvgs.SupplyTrackerBack,
-        link: '/supply-tracker',
-        Page: SupplyTracker,
-        primaryColor: '#32BB79',
-        secondaryColor: '#20955D',
-        github: 'https://github.com/ZaidArshad/Web-Consumable-Tracker',
+        name: 'Decay',
+        key: 3,
+        Front: projectSvgs.DecayFront,
+        Back: projectSvgs.DecayBack,
+        link: '/decay',
+        Page: Decay,
+        primaryColor: '#65D1FF',
+        secondaryColor: '#0099BA',
+        github: 'https://github.com/ZaidArshad/Decay',
+        description: 'Puzzle',
+        languages: ['C++']
     },
     {
         name: 'Gobblers',
@@ -110,6 +109,8 @@ export const projects: Project[] = [
         primaryColor: '#C474EA',
         secondaryColor: '#B740EF',
         github: 'https://github.com/ZaidArshad/SFU-CS-Fall-Hacks-2021',
+        description: '2P Mobile',
+        languages: ['Java']
     },
     {
         name: 'Bounce',
@@ -121,7 +122,47 @@ export const projects: Project[] = [
         primaryColor: '#FF4343',
         secondaryColor: '#C22626',
         github: 'https://github.com/ZaidArshad/Bounce',
+        description: 'Arcade',
+        languages: ['Python']
     },
-];
+]
+
+export const toolProjects: Project[] = [
+    {
+        name: 'Decay Level Tool',
+        key: 2,
+        Front: projectSvgs.LevelToolFront,
+        Back: projectSvgs.LevelToolBack,
+        link: '/level-tool',
+        Page: LevelTool,
+        primaryColor: '#FF419C',
+        secondaryColor: '#AF0054',
+        github: 'https://github.com/ZaidArshad/Decay-Level-Tool',
+        description: 'Level Designer',
+        languages: ['C++']
+    },
+    {
+        name: 'Supply Tracker',
+        key: 6,
+        Front: projectSvgs.SupplyTrackerFront,
+        Back: projectSvgs.SupplyTrackerBack,
+        link: '/supply-tracker',
+        Page: SupplyTracker,
+        primaryColor: '#32BB79',
+        secondaryColor: '#20955D',
+        github: 'https://github.com/ZaidArshad/Web-Consumable-Tracker',
+        description: 'Web Client',
+        languages: ['Java']
+    },
+]
+
+export const projectGroups: ProjectGroups = {
+    mobile: mobileProjects,
+    games: gameProjects,
+    tools: toolProjects 
+}
+
+export const projects: Project[] = mobileProjects.concat(gameProjects).concat(toolProjects)
+
 
 export default projects;

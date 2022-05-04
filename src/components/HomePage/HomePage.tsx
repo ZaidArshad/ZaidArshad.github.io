@@ -3,7 +3,7 @@ import './homepage.css'
 import PopText from '../PopText/PopText';
 import ZCap from '../KeyCaps/ZCap';
 import KeyCap from '../KeyCaps/KepCap';
-import projects from './projects';
+import projects, { projectGroups } from './projects';
 import TextDescription from '../TextDescription/TextDescription';
 import * as iconSVGs from '../assets/icons/index';
 import DiamondCaps from '../DiamondCaps/DiamondCaps';
@@ -29,13 +29,31 @@ const HomePage = () => {
         <ZCap/>
       </div>
 
-      <PopText>
-        Projects
-      </PopText>
       <div className='project-tab'>
+        <PopText>
+          Mobile Apps
+        </PopText>
         {
-          projects.map((project) => 
-            <KeyCap Front={project.Front} Back={project.Back} link={project.link} key={project.key}/>
+          projectGroups.mobile.map((project) => 
+            <KeyCap project={project}/>
+          )
+        }
+
+        <PopText>
+          Games
+        </PopText>
+        {
+          projectGroups.games.map((project) => 
+            <KeyCap project={project}/>
+          )
+        }
+
+        <PopText>
+          Tools
+        </PopText>
+        {
+          projectGroups.tools.map((project) => 
+            <KeyCap project={project}/>
           )
         }
       </div>
