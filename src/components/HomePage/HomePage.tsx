@@ -60,8 +60,8 @@ const HomePage = () => {
 
       <div className='about'>
         <TextDescription title='About Me'>
-          I am currently in my second year pursuing a degree in computer science at Simon Fraser University. 
-          I hope to soon apply my efforts towards a co-op or an internship.
+          Pursuing a degree in computer science at Simon Fraser University. 
+          Currently have 8 months of experience at Safe Software Inc as a developer.
           As shown in my projects, I have developed skills for front-end, back-end, game, web, and mobile development. 
         </TextDescription>
 
