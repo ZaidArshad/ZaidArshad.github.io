@@ -8,6 +8,8 @@ import Laps from '../pages/Laps';
 import LevelTool from '../pages/LevelTool';
 import SupplyTracker from '../pages/SupplyTracker';
 import WatRe from '../pages/WatRe';
+import Netpardy from '../pages/Netpardy';
+
 import { ProjectProps } from '../ProjectPage/ProjectPage';
 
 export interface Project {
@@ -123,6 +125,19 @@ export const gameProjects: Project[] = [
         secondaryColor: '#C22626',
         github: 'https://github.com/ZaidArshad/Bounce',
         description: 'Arcade',
+        languages: ['Python']
+    },
+    {
+        name: 'Netpardy!',
+        key: 9,
+        Front: projectSvgs.NetpardyFront,
+        Back: projectSvgs.NetpardyBack,
+        link: '/netpardy',
+        Page: Netpardy,
+        primaryColor: '#9069FF',
+        secondaryColor: '#3600D0',
+        github: 'https://github.com/ZaidArshad/Multiplayer-Jeopardy',
+        description: 'Real-time Trivia',
         languages: ['Python']
     },
 ]

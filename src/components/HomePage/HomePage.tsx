@@ -61,7 +61,7 @@ const HomePage = () => {
       <div className='about'>
         <TextDescription title='About Me'>
           Pursuing a degree in computer science at Simon Fraser University. 
-          Currently have 8 months of experience at Safe Software Inc as a developer.
+          Currently have 8 months of experience at Safe Software Inc. as a developer.
           As shown in my projects, I have developed skills for front-end, back-end, game, web, and mobile development. 
         </TextDescription>
 
