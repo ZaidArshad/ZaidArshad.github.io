@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a710a95e.css",
-    "main.js": "/static/js/main.7c2c4c61.js",
+    "main.js": "/static/js/main.64898778.js",
     "static/media/boatxz-cap-pressed.svg": "/static/media/boatxz-cap-pressed.b46d0ad1abaf65f4842354b2c88b3074.svg",
     "static/media/github-front.svg": "/static/media/github-front.37fca11fa18b88d032fc5d685d253437.svg",
     "static/media/github-back.svg": "/static/media/github-back.82c5fe3921a19674cf25d00a05e5d2bd.svg",
@@ -21,21 +21,23 @@
     "static/media/boatxz-cap.svg": "/static/media/boatxz-cap.bffa7c9d8fff9daa0caa08b3d62b1775.svg",
     "static/media/bounce-cap.svg": "/static/media/bounce-cap.dbfeb35bd1e378d49590ada6b3dd827b.svg",
     "static/media/watre-cap-pressed.svg": "/static/media/watre-cap-pressed.6d1adccc9b9b8f1f43f06d01a6e5cab6.svg",
+    "static/media/netpardy-cap.svg": "/static/media/netpardy-cap.3076d9ef7667aad141fa718239576fb5.svg",
     "static/media/laps-cap.svg": "/static/media/laps-cap.9dc662536e3544c9c8a86e50670c30e5.svg",
     "static/media/gobblers-cap.svg": "/static/media/gobblers-cap.c170061a3ad6655344e655f90d29f37e.svg",
     "static/media/supplytracker-cap.svg": "/static/media/supplytracker-cap.afe10191bee1c6a009c7d2334e1cadb4.svg",
     "static/media/email-back.svg": "/static/media/email-back.b36cea830bf85b5a06e32d7c0f03bcbc.svg",
     "static/media/decay-cap.svg": "/static/media/decay-cap.6ae751bd370d8c9dd60501758efa77cd.svg",
     "static/media/bounce-cap-pressed.svg": "/static/media/bounce-cap-pressed.69badd10d0c14cb0aa219ab1dd9a9472.svg",
+    "static/media/netpardy-cap-pressed.svg": "/static/media/netpardy-cap-pressed.f91a653083789ca991231c232655a920.svg",
     "static/media/gobblers-cap-pressed.svg": "/static/media/gobblers-cap-pressed.30c166ae94a355c115438d0d350c3355.svg",
     "static/media/supplytracker-cap-pressed.svg": "/static/media/supplytracker-cap-pressed.3797a3da3df2d1ecb1ee08b92bb043f4.svg",
     "static/media/decay-cap-pressed.svg": "/static/media/decay-cap-pressed.2302cb5a26e13e053e697fc351d8dbaa.svg",
     "static/media/laps-cap-pressed.svg": "/static/media/laps-cap-pressed.452037b6bd5ba9c35203d8f1aa6c7453.svg",
     "main.a710a95e.css.map": "/static/css/main.a710a95e.css.map",
-    "main.7c2c4c61.js.map": "/static/js/main.7c2c4c61.js.map"
+    "main.64898778.js.map": "/static/js/main.64898778.js.map"
   },
   "entrypoints": [
     "static/css/main.a710a95e.css",
-    "static/js/main.7c2c4c61.js"
+    "static/js/main.64898778.js"
   ]
 }
