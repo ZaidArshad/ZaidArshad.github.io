@@ -82,11 +82,11 @@ const LevelTool:React.FC<ProjectProps> = ({project}) => {
             imgSrc='files/leveltool/exporting-levels.gif'>
                 Once a level has been made, it can be exported with the “EXPORT” button. Your default .txt
                 editor will open and display the text in the format of:
-                    <br/><br/> Player_Y Player_Y <br/>
+                    <br/><br/> Player_X Player_Y <br/>
                     HEALTH WIDTH HEIGHT XPOS YPOS <br/>
                     HEALTH WIDTH HEIGHT XPOS YPOS <br/>
                     HEALTH WIDTH HEIGHT XPOS YPOS <br/> <br/>
-                The first line is the position of where that platform would start, and the subsequent lines
+                The first line is the position of where that player would start, and the subsequent lines
                 would be the details of each platform. From front to back the platforms will
                 be drawn based on the order in the file.
         </TextImg>
