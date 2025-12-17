@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.a710a95e.css",
-    "main.js": "/static/js/main.6d2922a9.js",
+    "main.js": "/static/js/main.b863bc25.js",
     "static/media/boatxz-cap-pressed.svg": "/static/media/boatxz-cap-pressed.b46d0ad1abaf65f4842354b2c88b3074.svg",
     "static/media/github-front.svg": "/static/media/github-front.37fca11fa18b88d032fc5d685d253437.svg",
     "static/media/github-back.svg": "/static/media/github-back.82c5fe3921a19674cf25d00a05e5d2bd.svg",
@@ -34,10 +34,10 @@
     "static/media/decay-cap-pressed.svg": "/static/media/decay-cap-pressed.2302cb5a26e13e053e697fc351d8dbaa.svg",
     "static/media/laps-cap-pressed.svg": "/static/media/laps-cap-pressed.452037b6bd5ba9c35203d8f1aa6c7453.svg",
     "main.a710a95e.css.map": "/static/css/main.a710a95e.css.map",
-    "main.6d2922a9.js.map": "/static/js/main.6d2922a9.js.map"
+    "main.b863bc25.js.map": "/static/js/main.b863bc25.js.map"
   },
   "entrypoints": [
     "static/css/main.a710a95e.css",
-    "static/js/main.6d2922a9.js"
+    "static/js/main.b863bc25.js"
   ]
 }
