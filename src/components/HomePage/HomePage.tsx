@@ -13,7 +13,7 @@ import DiamondCaps from '../DiamondCaps/DiamondCaps';
  * @returns React Component
  */
 const HomePage = () => {
-  window.scroll(0,0);
+  window.scroll(0, 0);
   return (
     <div>
       <div className='home-title'>
@@ -26,7 +26,7 @@ const HomePage = () => {
       </div>
 
       <div className='z-logo'>
-        <ZCap/>
+        <ZCap />
       </div>
 
       <div className='project-tab'>
@@ -34,8 +34,8 @@ const HomePage = () => {
           Mobile Apps
         </PopText>
         {
-          projectGroups.mobile.map((project) => 
-            <KeyCap project={project}/>
+          projectGroups.mobile.map((project) =>
+            <KeyCap project={project} />
           )
         }
 
@@ -43,8 +43,8 @@ const HomePage = () => {
           Games
         </PopText>
         {
-          projectGroups.games.map((project) => 
-            <KeyCap project={project}/>
+          projectGroups.games.map((project) =>
+            <KeyCap project={project} />
           )
         }
 
@@ -52,24 +52,24 @@ const HomePage = () => {
           Tools
         </PopText>
         {
-          projectGroups.tools.map((project) => 
-            <KeyCap project={project}/>
+          projectGroups.tools.map((project) =>
+            <KeyCap project={project} />
           )
         }
       </div>
 
       <div className='about'>
         <TextDescription title='About Me'>
-          Pursuing a degree in computer science at Simon Fraser University. 
-          Currently have 8 months of experience at Safe Software Inc. as a developer.
-          As shown in my projects, I have developed skills for front-end, back-end, game, web, and mobile development. 
+          Pursuing a degree in computer science at Simon Fraser University.
+          Currently have 20 months of professional experience as a developer from EA, Sony and Safe Software.
+          As shown in my projects, I have developed skills for frontend, backend, game, web, and mobile development.
         </TextDescription>
 
         <div className='external-links'>
-          <DiamondCaps Front={iconSVGs.LinkedinFront} Back={iconSVGs.LinkedinBack} link={'https://www.linkedin.com/in/zaid-arshad-882b12227/'}/>
-          <DiamondCaps Front={iconSVGs.GithubFront} Back={iconSVGs.GithubBack} link={'https://github.com/ZaidArshad'}/>
-          <DiamondCaps Front={iconSVGs.EmailFront} Back={iconSVGs.EmailBack} link={'mailto:zaidy.arshad@gmail.com'}/>
-          <DiamondCaps Front={iconSVGs.CVFront} Back={iconSVGs.CVBack} link='resumes/dev-resume.pdf'/>
+          <DiamondCaps Front={iconSVGs.LinkedinFront} Back={iconSVGs.LinkedinBack} link={'https://www.linkedin.com/in/zaid-arshad-882b12227/'} />
+          <DiamondCaps Front={iconSVGs.GithubFront} Back={iconSVGs.GithubBack} link={'https://github.com/ZaidArshad'} />
+          <DiamondCaps Front={iconSVGs.EmailFront} Back={iconSVGs.EmailBack} link={'mailto:zaidy.arshad@gmail.com'} />
+          <DiamondCaps Front={iconSVGs.CVFront} Back={iconSVGs.CVBack} link='resumes/dev-resume.pdf' />
         </div>
       </div>
     </div>
