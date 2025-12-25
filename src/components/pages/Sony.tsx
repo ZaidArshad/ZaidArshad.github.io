@@ -1,11 +1,12 @@
 import React from 'react'
-import ProjectPage, { ProjectProps } from '../Page/ProjectPage'
 import TextDescription from '../TextDescription/TextDescription'
 import TextImg from '../TextImg/TextImg'
+import Page, { PageProps } from '../Page/Page'
 
-const WatRe: React.FC<ProjectProps> = ({ project }) => {
+
+const Sony: React.FC<PageProps> = ({ page }) => {
   return (
-    <ProjectPage project={project} gitBG={project?.secondaryColor}>
+    <Page page={page}>
       <h2> Project by Zaid Arshad. Developed from June to August 2020 </h2>
       <h3> REST API compatibility added in January 2022. </h3>
 
@@ -89,8 +90,8 @@ const WatRe: React.FC<ProjectProps> = ({ project }) => {
         there is now a physical force making me want to drink water..
       </TextDescription>
 
-    </ProjectPage>
+    </Page>
   )
 }
 
-export default WatRe
+export default Sony

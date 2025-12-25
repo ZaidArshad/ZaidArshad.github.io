@@ -1,30 +1,20 @@
 import * as projectSvgs from '../assets/projects';
-import Boatxz from '../pages/Boatxz';
-import Bounce from '../pages/Bounce';
-import Decay from '../pages/Decay';
-import DuckHunt from '../pages/DuckHunt';
-import Gobblers from '../pages/Gobblers';
-import Laps from '../pages/Laps';
-import LevelTool from '../pages/LevelTool';
-import SupplyTracker from '../pages/SupplyTracker';
-import WatRe from '../pages/WatRe';
-import Netpardy from '../pages/Netpardy';
+import Boatxz from './Boatxz';
+import Bounce from './Bounce';
+import Decay from './Decay';
+import DuckHunt from './DuckHunt';
+import Gobblers from './Gobblers';
+import Laps from './Laps';
+import LevelTool from './LevelTool';
+import SupplyTracker from './SupplyTracker';
+import WatRe from './WatRe';
+import Netpardy from './Netpardy';
+import EA from './EA';
+import Sony from './Sony';
+import Safe from './Safe';
 
-import { ProjectProps } from '../ProjectPage/ProjectPage';
-
-export interface Project {
-    name: string;
-    key: number;
-    Front: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-    Back: React.FunctionComponent<React.SVGProps<SVGSVGElement>>;
-    link: string;
-    Page: React.FC<ProjectProps>;
-    primaryColor: string;
-    secondaryColor: string;
-    github: string;
-    description: string;
-    languages: string[];
-};
+import { BasePage } from '../Page/BasePage';
+import { Project } from '../Page/Project';
 
 export interface ProjectGroups {
     mobile: Project[];
@@ -171,13 +161,43 @@ export const toolProjects: Project[] = [
     },
 ]
 
+export const workExperiences: BasePage[] = [
+    {
+        name: 'Electronic Arts',
+        key: 10,
+        Front: projectSvgs.EAFront,
+        Back: projectSvgs.EABack,
+        link: '/ea',
+        Page: EA,
+        primaryColor: '#3E68FF',
+        secondaryColor: '#183AB2',
+    },
+    {
+        name: 'Sony Pictures Imageworks',
+        key: 11,
+        Front: projectSvgs.SonyFront,
+        Back: projectSvgs.SonyBack,
+        link: '/sony',
+        Page: Sony,
+        primaryColor: '#FF3D3A',
+        secondaryColor: '#911311'
+    },
+    {
+        name: 'Safe Software Inc.',
+        key: 12,
+        Front: projectSvgs.SafeFront,
+        Back: projectSvgs.SafeBack,
+        link: '/safe',
+        Page: Safe,
+        primaryColor: '#FF9330',
+        secondaryColor: '#AF6018'
+    },
+]
+
 export const projectGroups: ProjectGroups = {
     mobile: mobileProjects,
     games: gameProjects,
-    tools: toolProjects 
+    tools: toolProjects
 }
 
-export const projects: Project[] = mobileProjects.concat(gameProjects).concat(toolProjects)
-
-
-export default projects;
+export const personalProjects: Project[] = [...mobileProjects, ...gameProjects, ...toolProjects];
