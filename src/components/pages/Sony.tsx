@@ -7,88 +7,66 @@ import Page, { PageProps } from '../Page/Page'
 const Sony: React.FC<PageProps> = ({ page }) => {
   return (
     <Page page={page}>
-      <h2> Project by Zaid Arshad. Developed from June to August 2020 </h2>
-      <h3> REST API compatibility added in January 2022. </h3>
+      <h2> Full Stack Developer Intern from Jan 2024 - August 2024 </h2>
 
-      <TextDescription title='Description'>
-        WatRe is an Android application coded in Java that makes use of notifications
-        to remind the user to drink water. It can also remind you via computer with the
-        .NET server and python script. When a notification is sent to the phone a
-        sound will be played on the computer it is connected to.
-      </TextDescription>
-
-      <TextDescription title='Experience'>
-        This was the first major Android project I worked on. I made this application
-        for myself as I did poorly staying hydrated. The objective of this application
-        is to remind myself to drink water periodically throughout the day with daily and hourly notifications.
-      </TextDescription>
-
-      <TextDescription title='APK'>
-        The APK for this app can be found under the &nbsp;
-        <a href="https://github.com/ZaidArshad/WatRe/releases/tag/v1.0.0">
-          releases
-        </a>
-        &nbsp; tab on this repository.
-      </TextDescription>
-
-      <TextImg
-        title='Daily Reminder'
-        imgSrc='files/watre/daily-reminder.png'>
-        The user will be greeted every morning with a reminder to start drinking water.
-        This notification cannot be closed unless the user opens the app. While this may
-        be an aggressive approach, it will prevent them from being lazy and guilt them into drinking more water.
+      <TextImg title='Introduction'
+        imgSrc='files/sony/spiderman-spot.png'>
+        At Imageworks, I started on the Apps team then moved to the Web team once
+        there was an opportunity to start my own project. On the Apps team I
+        worked on maintaining our Academy Award winning review software ItView
+        with Qt and Python. On the Web team I worked with the Spider-Verse team
+        to create a feedback tool with Angular, Typescript, Python and Flask.
       </TextImg>
 
-      <TextImg
-        title='Press the Button'
+      <TextImg title='Imageworks'
         className='img-text'
-        imgClass='img-phone'
-        imgSrc='files/watre/press-the-button.gif'>
-        Pressing the main water button will start a background process to
-        remind you to drink water again in the next 1.5 hours. Once it is
-        clicked it will turn grey showing that it is unclickable.
-        It will also fill the bar representing how much water you have drank.
+        imgSrc='files/sony/kpop.gif'>
+        Sony Pictures Imageworks is the VFX and animation branch of Sony Pictures.
+        While I was there movies like Minecraft, KPOP: Demon Hunters and the next
+        Spider-Verse movie were in production. I was there right after the 2023
+        writers strike so money was tight and some projects were unfortunately canceled.
       </TextImg>
 
-      <TextImg
-        title='Button Phases'
-        className='center'
-        imgSrc='files/watre/button-phases.png'>
-        The button has 3 phases.
-      </TextImg>
-
-      <TextImg
-        title='Hourly Reminder'
-        imgSrc='files/watre/hourly-reminder.png'>
-        Every 1 hour and 30 minutes after the button is pressed
-        there is a reminder to drink water again.
-        This will happen up to 7 times a day signifying the
-        recommended 8 glasses of water that a human should drink.
-      </TextImg>
-
-      <TextImg
-        title='Animated Background'
-        className='img-text'
-        imgClass='img-phone'
-        imgSrc='files/watre/animated-background.gif'>
-        The animated background is a pleasant feature to look at every time you open the app.
-      </TextImg>
-
-      <TextDescription title='.NET Server'>
-        I used the WatRe app to remind myself to drink water but I did not check my
-        phone enough. The .NET server and REST API enable communication between my phone and my computer.
-        The server and python script runs on startup using a VB Script (Visual Basic Script). The python
-        script gets a status from the REST API every 5 minutes to check if the notification was sent.
-        Once a true response is received, the script will play a sound to remind the user to drink
-        water/check their phone for the notification.
+      <TextDescription title='Apps Team'>
+        I initially started on the Apps team where I worked on ItView which is
+        a video player used studio wide to review artist shots. It was written in
+        Python and used PyQt as its interface. There are many plugins for the
+        program that are used in different productions. My first task was to
+        improve the usability of the program with a tablet via the tablet plugin.
+        Brush sizes to draw on frames were buttons so I converted it to a logarithmic
+        slider to allow a better experience for tablet users. As my term went along,
+        I fixed more issues and completed feature requests from productions. The most
+        complicated task I completed was to overhaul the playlist saving mechanism
+        as it was unclear where files were saved. Doing a “save as” would cause
+        state issues with a regular “save” and auto save. I improved usability
+        by providing a location on the hotbar of where the file would be saved.
+        I refactored to make it clear how saving would work in the code to limit
+        unnecessary saving and overwriting of work.
       </TextDescription>
 
-      <TextDescription title='Sound Queue Conditioning'>
-        As demonstrated by Ivan Pavlov's experiments with classical conditioning,
-        I often feel a dry and parched mouth when the sound is heard. This was
-        not what I intended when first creating the server but it is good since
-        there is now a physical force making me want to drink water..
-      </TextDescription>
+      <TextImg title='Web team'
+        imgSrc='files/sony/spider-poster.jpg'>
+        On the Web team I worked with the Spider-Verse team to create a feedback tool.
+        The tool is similar to a forum but it could attach conversations to assets.
+        The frontend was created using Angular and could be opened as a desktop
+        app using Electron. The backend pulls from the studio's production database
+        to allow users to comment on shots, models, environments and other types of
+        assets. The catalyst for this project was that the rigging team for Spider-Man
+        Across the Spider-Verse used to pass feedback from the animation team through
+        a Google Sheets spreadsheet. This was problematic as the Chrome tab would often
+        crash due to memory issues caused by too much data. I really wonder how some
+        of these generationally defining movies make it to the theaters. The tool I
+        made hooks up to the studio's database and connects conversations to actual
+        assets in the file system. In the case of rigging, you would be able to
+        see the internal status of your model as you receive feedback on it from
+        your supervisor. Another issue is that you can't tell what has changed
+        on the spreadsheet from the last time you opened it. I added a way to
+        receive email notifications to posts that you have subscribed to or assets
+        that you are working on. That way you won't miss a piece of communication
+        in the sea of information. I showcased my project to the studio's department
+        heads to gain insightful feedback and necessary visibility. The project
+        would be useless if no one knew about it!
+      </TextImg>
 
     </Page>
   )
