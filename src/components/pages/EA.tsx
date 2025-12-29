@@ -7,88 +7,56 @@ import Page, { PageProps } from '../Page/Page'
 const EA: React.FC<PageProps> = ({ page }) => {
   return (
     <Page page={page} >
-      <h2> Project by Zaid Arshad. Developed from June to August 2020 </h2>
-      <h3> REST API compatibility added in January 2022. </h3>
+      <h2> Software Engineer Intern from May 2025 - August 2025 </h2>
 
-      <TextDescription title='Description'>
-        WatRe is an Android application coded in Java that makes use of notifications
-        to remind the user to drink water. It can also remind you via computer with the
-        .NET server and python script. When a notification is sent to the phone a
-        sound will be played on the computer it is connected to.
-      </TextDescription>
-
-      <TextDescription title='Experience'>
-        This was the first major Android project I worked on. I made this application
-        for myself as I did poorly staying hydrated. The objective of this application
-        is to remind myself to drink water periodically throughout the day with daily and hourly notifications.
-      </TextDescription>
-
-      <TextDescription title='APK'>
-        The APK for this app can be found under the &nbsp;
-        <a href="https://github.com/ZaidArshad/WatRe/releases/tag/v1.0.0">
-          releases
-        </a>
-        &nbsp; tab on this repository.
-      </TextDescription>
-
-      <TextImg
-        title='Daily Reminder'
-        imgSrc='files/watre/daily-reminder.png'>
-        The user will be greeted every morning with a reminder to start drinking water.
-        This notification cannot be closed unless the user opens the app. While this may
-        be an aggressive approach, it will prevent them from being lazy and guilt them into drinking more water.
+      <TextImg title='Introduction'
+        imgSrc='files/ea/respawn.svg'>
+        I worked on Apex Legends at Respawn Entertainment
+        on the Shared Tools team. I developed tools that helped
+        the game continue to be iterated upon. The first tool
+        I worked on was Respawn's Art Asset Manager in C#.
+        The other significant tool I extended was Apex Legends'
+        binary packer in C++.
       </TextImg>
 
-      <TextImg
-        title='Press the Button'
-        className='img-text'
-        imgClass='img-phone'
-        imgSrc='files/watre/press-the-button.gif'>
-        Pressing the main water button will start a background process to
-        remind you to drink water again in the next 1.5 hours. Once it is
-        clicked it will turn grey showing that it is unclickable.
-        It will also fill the bar representing how much water you have drank.
+      <TextImg title='Respawn Art Asset Manager'
+        imgSrc='files/ea/apex-legends.jpg'>
+        The Respawn Art Asset Manager (RAAM) interfaces with another internal
+        tool to create game binaries from our assets. This way we don't need
+        to manually work with our binary compiler to change specific parts
+        of assets. The part I worked on has automation for content managers
+        to produce battlepasses or in game events faster. I used C# and WPF
+        to extend and fix current implementations where I worked through a
+        backlog of issues. I took on tasks like making sure our binary compiler
+        was getting the right values, fixing UI inconsistencies, having fields
+        depend on other fields and removing dead features. I needed to requirement
+        gather to get more context from content managers because the Jira tickets
+        were quite bare. I was also responsible for releasing my changes to the
+        production version with some patch notes to give visibility on what changed.
       </TextImg>
 
-      <TextImg
-        title='Button Phases'
-        className='center'
-        imgSrc='files/watre/button-phases.png'>
-        The button has 3 phases.
-      </TextImg>
-
-      <TextImg
-        title='Hourly Reminder'
-        imgSrc='files/watre/hourly-reminder.png'>
-        Every 1 hour and 30 minutes after the button is pressed
-        there is a reminder to drink water again.
-        This will happen up to 7 times a day signifying the
-        recommended 8 glasses of water that a human should drink.
-      </TextImg>
-
-      <TextImg
-        title='Animated Background'
-        className='img-text'
-        imgClass='img-phone'
-        imgSrc='files/watre/animated-background.gif'>
-        The animated background is a pleasant feature to look at every time you open the app.
-      </TextImg>
-
-      <TextDescription title='.NET Server'>
-        I used the WatRe app to remind myself to drink water but I did not check my
-        phone enough. The .NET server and REST API enable communication between my phone and my computer.
-        The server and python script runs on startup using a VB Script (Visual Basic Script). The python
-        script gets a status from the REST API every 5 minutes to check if the notification was sent.
-        Once a true response is received, the script will play a sound to remind the user to drink
-        water/check their phone for the notification.
+      <TextDescription title='Binary Packer'>
+        I was tasked with adding telemetry to Apex Legends' binary packer. It was written
+        a long time ago in C++ for previous games that use the same game engine. It was
+        initially written by a single developer so it was difficult to jump into the
+        code because of the monolithic design and lack of object oriented programming.
+        The reason we needed to have telemetry was because the binary packer would fail
+        without reason and the best way to fix it was to delete all binaries and try again.
+        I went into the code and added breadcrumbs to help us track problems like command
+        line arguments, how files were packed, elapsed time, errors, etc. We have a
+        studio wide system that lets us upload telemetry that allows us to measure our metrics.
+        This tool needed to run as efficiently as possible as it would process hundreds of
+        thousands of files and if broken could prevent us from creating game updates. In order
+        to upload the generated telemetry I came up with the approach of running it on a
+        separate process. The upload program was written in Python as we already had the
+        libraries to handle telemetry upload. I had to coordinate with the build team to
+        understand how this could be implemented in the current build pipeline. This encapsulates
+        the telemetry upload from the game building pipeline where if the upload fails the
+        system can still proceed. This also improves efficiency as we can upload the telemetry
+        in parallel to other build processes.
       </TextDescription>
 
-      <TextDescription title='Sound Queue Conditioning'>
-        As demonstrated by Ivan Pavlov's experiments with classical conditioning,
-        I often feel a dry and parched mouth when the sound is heard. This was
-        not what I intended when first creating the server but it is good since
-        there is now a physical force making me want to drink water..
-      </TextDescription>
+
 
     </Page>
   )
