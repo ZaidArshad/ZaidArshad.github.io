@@ -1,7 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.a710a95e.css",
-    "main.js": "/static/js/main.b863bc25.js",
+    "main.js": "/static/js/main.60faf339.js",
+    "static/media/sony-cap.svg": "/static/media/sony-cap.6c7d26c21f651152a85435efcf0d04eb.svg",
+    "static/media/sony-cap-pressed.svg": "/static/media/sony-cap-pressed.b775f4ef9721b5275ea9fd6144aa5e45.svg",
+    "static/media/safe-cap.svg": "/static/media/safe-cap.c088b5e906af8bee7bc50c742ae0d5e2.svg",
+    "static/media/safe-cap-pressed.svg": "/static/media/safe-cap-pressed.bfdd50e0eeccb079b45ecc5df9d82b66.svg",
+    "static/media/ea-cap.svg": "/static/media/ea-cap.5a3f6c10a7fdbcb585055f592f21eeb5.svg",
+    "static/media/ea-cap-pressed.svg": "/static/media/ea-cap-pressed.065c64294ba8ea0d6d35363a4d23e40f.svg",
     "static/media/boatxz-cap-pressed.svg": "/static/media/boatxz-cap-pressed.b46d0ad1abaf65f4842354b2c88b3074.svg",
     "static/media/github-front.svg": "/static/media/github-front.37fca11fa18b88d032fc5d685d253437.svg",
     "static/media/github-back.svg": "/static/media/github-back.82c5fe3921a19674cf25d00a05e5d2bd.svg",
@@ -16,10 +22,10 @@
     "static/media/leveltool-cap.svg": "/static/media/leveltool-cap.0a98791d968fe0b1b14c7f59edfa65f4.svg",
     "static/media/watre-cap.svg": "/static/media/watre-cap.c9a45c99928ba812c4649b78fcf6fa27.svg",
     "static/media/duckhunt-cap.svg": "/static/media/duckhunt-cap.0e06cc5c883f2994f473b1ac3dbcdcb4.svg",
+    "static/media/bounce-cap.svg": "/static/media/bounce-cap.09c63b365b86591780ac250436a41216.svg",
     "index.html": "/index.html",
     "static/media/leveltool-cap-pressed.svg": "/static/media/leveltool-cap-pressed.22a6db5562a36bc56183aa55af969d78.svg",
     "static/media/boatxz-cap.svg": "/static/media/boatxz-cap.bffa7c9d8fff9daa0caa08b3d62b1775.svg",
-    "static/media/bounce-cap.svg": "/static/media/bounce-cap.dbfeb35bd1e378d49590ada6b3dd827b.svg",
     "static/media/watre-cap-pressed.svg": "/static/media/watre-cap-pressed.6d1adccc9b9b8f1f43f06d01a6e5cab6.svg",
     "static/media/netpardy-cap.svg": "/static/media/netpardy-cap.3076d9ef7667aad141fa718239576fb5.svg",
     "static/media/laps-cap.svg": "/static/media/laps-cap.9dc662536e3544c9c8a86e50670c30e5.svg",
@@ -34,10 +40,10 @@
     "static/media/decay-cap-pressed.svg": "/static/media/decay-cap-pressed.2302cb5a26e13e053e697fc351d8dbaa.svg",
     "static/media/laps-cap-pressed.svg": "/static/media/laps-cap-pressed.452037b6bd5ba9c35203d8f1aa6c7453.svg",
     "main.a710a95e.css.map": "/static/css/main.a710a95e.css.map",
-    "main.b863bc25.js.map": "/static/js/main.b863bc25.js.map"
+    "main.60faf339.js.map": "/static/js/main.60faf339.js.map"
   },
   "entrypoints": [
     "static/css/main.a710a95e.css",
-    "static/js/main.b863bc25.js"
+    "static/js/main.60faf339.js"
   ]
 }
